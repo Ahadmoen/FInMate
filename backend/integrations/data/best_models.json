@@ -1,0 +1,6050 @@
+[
+  {
+    "Symbol": "786",
+    "ARIMA_MAPE": 0.1815,
+    "LSTM_MAPE": 0.1199,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.1199,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00507
+  },
+  {
+    "Symbol": "AABS",
+    "ARIMA_MAPE": 0.0324,
+    "LSTM_MAPE": 0.3364,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0324,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AASM",
+    "ARIMA_MAPE": 0.0973,
+    "LSTM_MAPE": 0.3902,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0973,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.04796
+  },
+  {
+    "Symbol": "AATM",
+    "ARIMA_MAPE": 0.0525,
+    "LSTM_MAPE": 0.0349,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0349,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0078
+  },
+  {
+    "Symbol": "ABL",
+    "ARIMA_MAPE": 0.0245,
+    "LSTM_MAPE": 0.1289,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0245,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ABOT",
+    "ARIMA_MAPE": 0.0513,
+    "LSTM_MAPE": 0.038,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.038,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ABSON",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0005,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ACPL",
+    "ARIMA_MAPE": 0.0204,
+    "LSTM_MAPE": 0.0141,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0141,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ADAMS",
+    "ARIMA_MAPE": 0.0223,
+    "LSTM_MAPE": 0.0952,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0223,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00883
+  },
+  {
+    "Symbol": "ADMM",
+    "ARIMA_MAPE": 0.0658,
+    "LSTM_MAPE": 0.0485,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0485,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00649
+  },
+  {
+    "Symbol": "ADOS",
+    "ARIMA_MAPE": 0.0194,
+    "LSTM_MAPE": 0.0178,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0178,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01537
+  },
+  {
+    "Symbol": "ADTM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0006,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AEL",
+    "ARIMA_MAPE": 0.0706,
+    "LSTM_MAPE": 0.0607,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0607,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.03418
+  },
+  {
+    "Symbol": "AGHA",
+    "ARIMA_MAPE": 0.0479,
+    "LSTM_MAPE": 0.0592,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0479,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00613
+  },
+  {
+    "Symbol": "AGIC",
+    "ARIMA_MAPE": 0.0361,
+    "LSTM_MAPE": 0.021,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.021,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AGIL",
+    "ARIMA_MAPE": 0.0442,
+    "LSTM_MAPE": 0.026,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.026,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AGL",
+    "ARIMA_MAPE": 0.0613,
+    "LSTM_MAPE": 0.3086,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0613,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00613
+  },
+  {
+    "Symbol": "AGP",
+    "ARIMA_MAPE": 0.0505,
+    "LSTM_MAPE": 0.0748,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0505,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AGSML",
+    "ARIMA_MAPE": 0.0669,
+    "LSTM_MAPE": 0.0396,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0396,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00616
+  },
+  {
+    "Symbol": "AGTL",
+    "ARIMA_MAPE": 0.0403,
+    "LSTM_MAPE": 0.0227,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0227,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AHCL",
+    "ARIMA_MAPE": 0.0369,
+    "LSTM_MAPE": 0.1755,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0369,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AHL",
+    "ARIMA_MAPE": 0.037,
+    "LSTM_MAPE": 0.0259,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0259,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AHTM",
+    "ARIMA_MAPE": 0.0974,
+    "LSTM_MAPE": 0.0865,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0865,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AICL",
+    "ARIMA_MAPE": 0.0628,
+    "LSTM_MAPE": 0.0383,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0383,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00796
+  },
+  {
+    "Symbol": "AIRLINK",
+    "ARIMA_MAPE": 0.045,
+    "LSTM_MAPE": 0.0269,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0269,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00553
+  },
+  {
+    "Symbol": "AKBL",
+    "ARIMA_MAPE": 0.0469,
+    "LSTM_MAPE": 0.0385,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0385,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AKDCL",
+    "ARIMA_MAPE": 0.0722,
+    "LSTM_MAPE": 0.0373,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0373,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02312
+  },
+  {
+    "Symbol": "AKDHL",
+    "ARIMA_MAPE": 0.064,
+    "LSTM_MAPE": 0.0302,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0302,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AKDSL",
+    "ARIMA_MAPE": 0.0708,
+    "LSTM_MAPE": 0.0566,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0566,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00547
+  },
+  {
+    "Symbol": "AKGL",
+    "ARIMA_MAPE": 0.019,
+    "LSTM_MAPE": 0.5602,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.019,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AKZO",
+    "ARIMA_MAPE": 0.0002,
+    "LSTM_MAPE": 0.0179,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0002,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ALAC",
+    "ARIMA_MAPE": 0.0507,
+    "LSTM_MAPE": 0.0436,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0436,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00885
+  },
+  {
+    "Symbol": "ALIFE",
+    "ARIMA_MAPE": 0.0347,
+    "LSTM_MAPE": 0.0253,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0253,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00667
+  },
+  {
+    "Symbol": "ALNRS",
+    "ARIMA_MAPE": 0.0357,
+    "LSTM_MAPE": 0.1227,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0357,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00783
+  },
+  {
+    "Symbol": "ALQT",
+    "ARIMA_MAPE": 0.0234,
+    "LSTM_MAPE": 0.2025,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0234,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ALTN",
+    "ARIMA_MAPE": 0.0414,
+    "LSTM_MAPE": 0.0405,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0405,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AMBL",
+    "ARIMA_MAPE": 0.0984,
+    "LSTM_MAPE": 0.0787,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0787,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01624
+  },
+  {
+    "Symbol": "AMSL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0131,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AMTEX",
+    "ARIMA_MAPE": 0.0547,
+    "LSTM_MAPE": 0.0633,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0547,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01008
+  },
+  {
+    "Symbol": "ANL",
+    "ARIMA_MAPE": 0.052,
+    "LSTM_MAPE": 0.0297,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0297,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ANNT",
+    "ARIMA_MAPE": 0.0265,
+    "LSTM_MAPE": 0.0115,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0115,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ANSM",
+    "ARIMA_MAPE": 0.0658,
+    "LSTM_MAPE": 0.0408,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0408,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00763
+  },
+  {
+    "Symbol": "ANTM",
+    "ARIMA_MAPE": 0.0598,
+    "LSTM_MAPE": 0.044,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.044,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00866
+  },
+  {
+    "Symbol": "APL",
+    "ARIMA_MAPE": 0.0314,
+    "LSTM_MAPE": 0.0198,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0198,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "APOT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0007,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AQTM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0053,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ARCTM",
+    "ARIMA_MAPE": 0.0656,
+    "LSTM_MAPE": 0.0901,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0656,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ARM",
+    "ARIMA_MAPE": 0.043,
+    "LSTM_MAPE": 0.0291,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0291,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00502
+  },
+  {
+    "Symbol": "ARPAK",
+    "ARIMA_MAPE": 0.0677,
+    "LSTM_MAPE": 0.0429,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0429,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ARPL",
+    "ARIMA_MAPE": 0.042,
+    "LSTM_MAPE": 0.022,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.022,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ARUJ",
+    "ARIMA_MAPE": 0.0688,
+    "LSTM_MAPE": 0.0451,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0451,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01187
+  },
+  {
+    "Symbol": "ASC",
+    "ARIMA_MAPE": 0.0574,
+    "LSTM_MAPE": 0.0332,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0332,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00717
+  },
+  {
+    "Symbol": "ASHT",
+    "ARIMA_MAPE": 0.1089,
+    "LSTM_MAPE": 0.0881,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0881,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ASIC",
+    "ARIMA_MAPE": 0.0734,
+    "LSTM_MAPE": 0.1872,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0734,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ASL",
+    "ARIMA_MAPE": 0.0469,
+    "LSTM_MAPE": 0.0287,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0287,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00576
+  },
+  {
+    "Symbol": "ASLCPS",
+    "ARIMA_MAPE": 0.0724,
+    "LSTM_MAPE": 0.0777,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0724,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01281
+  },
+  {
+    "Symbol": "ASLPS",
+    "ARIMA_MAPE": 0.0333,
+    "LSTM_MAPE": 0.0212,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0212,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ASRL",
+    "ARIMA_MAPE": 0.0276,
+    "LSTM_MAPE": 0.0206,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0206,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01068
+  },
+  {
+    "Symbol": "ASTL",
+    "ARIMA_MAPE": 0.0402,
+    "LSTM_MAPE": 0.0914,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0402,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ASTM",
+    "ARIMA_MAPE": 0.0953,
+    "LSTM_MAPE": 0.0472,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0472,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00879
+  },
+  {
+    "Symbol": "ATBA",
+    "ARIMA_MAPE": 0.0489,
+    "LSTM_MAPE": 0.0277,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0277,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ATIL",
+    "ARIMA_MAPE": 0.0253,
+    "LSTM_MAPE": 0.0224,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0224,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ATLH",
+    "ARIMA_MAPE": 0.0314,
+    "LSTM_MAPE": 0.4965,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0314,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ATRL",
+    "ARIMA_MAPE": 0.0517,
+    "LSTM_MAPE": 0.3201,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0517,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AVN",
+    "ARIMA_MAPE": 0.0413,
+    "LSTM_MAPE": 0.0265,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0265,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AWTX",
+    "ARIMA_MAPE": 0.0497,
+    "LSTM_MAPE": 0.5505,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0497,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0375
+  },
+  {
+    "Symbol": "AWWAL",
+    "ARIMA_MAPE": 0.1315,
+    "LSTM_MAPE": 0.0597,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0597,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01325
+  },
+  {
+    "Symbol": "AYTM",
+    "ARIMA_MAPE": 0.0196,
+    "LSTM_MAPE": 0.1176,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0196,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AYZT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AZMT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "AZTM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0134,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BAFL",
+    "ARIMA_MAPE": 0.1134,
+    "LSTM_MAPE": 0.2109,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1134,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BAFS",
+    "ARIMA_MAPE": 0.0694,
+    "LSTM_MAPE": 0.5241,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0694,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01419
+  },
+  {
+    "Symbol": "BAHL",
+    "ARIMA_MAPE": 0.0327,
+    "LSTM_MAPE": 0.3883,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0327,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BAPL",
+    "ARIMA_MAPE": 0.0332,
+    "LSTM_MAPE": 0.0239,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0239,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00745
+  },
+  {
+    "Symbol": "BATA",
+    "ARIMA_MAPE": 0.0294,
+    "LSTM_MAPE": 0.0261,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0261,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BBFL",
+    "ARIMA_MAPE": 0.0408,
+    "LSTM_MAPE": 0.1125,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0408,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BCL",
+    "ARIMA_MAPE": 0.0456,
+    "LSTM_MAPE": 0.0236,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0236,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BCML",
+    "ARIMA_MAPE": 0.0979,
+    "LSTM_MAPE": 0.0674,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0674,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02494
+  },
+  {
+    "Symbol": "BECO",
+    "ARIMA_MAPE": 0.0643,
+    "LSTM_MAPE": 0.0585,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0585,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00535
+  },
+  {
+    "Symbol": "BEEM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0014,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BELA",
+    "ARIMA_MAPE": 0.1084,
+    "LSTM_MAPE": 0.0623,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0623,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01134
+  },
+  {
+    "Symbol": "BERG",
+    "ARIMA_MAPE": 0.0305,
+    "LSTM_MAPE": 0.021,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.021,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BFAGRO",
+    "ARIMA_MAPE": 0.0425,
+    "LSTM_MAPE": 0.0457,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0425,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00576
+  },
+  {
+    "Symbol": "BFBIO",
+    "ARIMA_MAPE": 0.0512,
+    "LSTM_MAPE": 0.0365,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0365,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BFMOD",
+    "ARIMA_MAPE": 0.1068,
+    "LSTM_MAPE": 0.2391,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1068,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.03622
+  },
+  {
+    "Symbol": "BGL",
+    "ARIMA_MAPE": 0.0477,
+    "LSTM_MAPE": 0.0272,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0272,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00774
+  },
+  {
+    "Symbol": "BHAT",
+    "ARIMA_MAPE": 0.0534,
+    "LSTM_MAPE": 0.0209,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0209,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BIFO",
+    "ARIMA_MAPE": 0.0877,
+    "LSTM_MAPE": 0.0429,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0429,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0053
+  },
+  {
+    "Symbol": "BIIC",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0031,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BILF",
+    "ARIMA_MAPE": 0.09,
+    "LSTM_MAPE": 0.1015,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.09,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.014
+  },
+  {
+    "Symbol": "BIPL",
+    "ARIMA_MAPE": 0.0487,
+    "LSTM_MAPE": 0.2001,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0487,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BIPLS",
+    "ARIMA_MAPE": 0.0411,
+    "LSTM_MAPE": 0.2475,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0411,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01179
+  },
+  {
+    "Symbol": "BML",
+    "ARIMA_MAPE": 0.067,
+    "LSTM_MAPE": 0.5762,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.067,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00612
+  },
+  {
+    "Symbol": "BNL",
+    "ARIMA_MAPE": 0.0463,
+    "LSTM_MAPE": 0.1549,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0463,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00724
+  },
+  {
+    "Symbol": "BNWM",
+    "ARIMA_MAPE": 0.0415,
+    "LSTM_MAPE": 0.0407,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0407,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00745
+  },
+  {
+    "Symbol": "BOK",
+    "ARIMA_MAPE": 0.0304,
+    "LSTM_MAPE": 0.3437,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0304,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00559
+  },
+  {
+    "Symbol": "BOP",
+    "ARIMA_MAPE": 0.0593,
+    "LSTM_MAPE": 0.0435,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0435,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00664
+  },
+  {
+    "Symbol": "BPBL",
+    "ARIMA_MAPE": 0.1047,
+    "LSTM_MAPE": 0.0686,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0686,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01736
+  },
+  {
+    "Symbol": "BPL",
+    "ARIMA_MAPE": 0.0525,
+    "LSTM_MAPE": 0.0635,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0525,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00756
+  },
+  {
+    "Symbol": "BROT",
+    "ARIMA_MAPE": 0.074,
+    "LSTM_MAPE": 0.0511,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0511,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01283
+  },
+  {
+    "Symbol": "BRR",
+    "ARIMA_MAPE": 0.0421,
+    "LSTM_MAPE": 0.0303,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0303,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01419
+  },
+  {
+    "Symbol": "BRRG",
+    "ARIMA_MAPE": 0.0194,
+    "LSTM_MAPE": 0.0299,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0194,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0059
+  },
+  {
+    "Symbol": "BTL",
+    "ARIMA_MAPE": 0.1298,
+    "LSTM_MAPE": 0.2257,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1298,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BUXL",
+    "ARIMA_MAPE": 0.0309,
+    "LSTM_MAPE": 0.0292,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0292,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00809
+  },
+  {
+    "Symbol": "BWCL",
+    "ARIMA_MAPE": 0.032,
+    "LSTM_MAPE": 0.2499,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.032,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BWHL",
+    "ARIMA_MAPE": 0.0435,
+    "LSTM_MAPE": 0.0358,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0358,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "BYCO",
+    "ARIMA_MAPE": 0.0525,
+    "LSTM_MAPE": 0.0313,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0313,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00613
+  },
+  {
+    "Symbol": "CASH",
+    "ARIMA_MAPE": 0.0386,
+    "LSTM_MAPE": 0.0321,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0321,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01411
+  },
+  {
+    "Symbol": "CCM",
+    "ARIMA_MAPE": 0.0439,
+    "LSTM_MAPE": 0.0394,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0394,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "CECL",
+    "ARIMA_MAPE": 0.0934,
+    "LSTM_MAPE": 0.1591,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0934,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02434
+  },
+  {
+    "Symbol": "CENI",
+    "ARIMA_MAPE": 0.0377,
+    "LSTM_MAPE": 0.0199,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0199,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "CEPB",
+    "ARIMA_MAPE": 0.0593,
+    "LSTM_MAPE": 0.0366,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0366,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00798
+  },
+  {
+    "Symbol": "CFL",
+    "ARIMA_MAPE": 0.0515,
+    "LSTM_MAPE": 0.0243,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0243,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "CHAS",
+    "ARIMA_MAPE": 0.1173,
+    "LSTM_MAPE": 0.0468,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0468,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00665
+  },
+  {
+    "Symbol": "CHBL",
+    "ARIMA_MAPE": 0.1125,
+    "LSTM_MAPE": 0.0468,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0468,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01008
+  },
+  {
+    "Symbol": "CHCC",
+    "ARIMA_MAPE": 0.0507,
+    "LSTM_MAPE": 0.1678,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0507,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00705
+  },
+  {
+    "Symbol": "CJPL",
+    "ARIMA_MAPE": 0.0403,
+    "LSTM_MAPE": 0.2199,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0403,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01596
+  },
+  {
+    "Symbol": "CLCPS",
+    "ARIMA_MAPE": 0.0831,
+    "LSTM_MAPE": 0.0438,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0438,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01185
+  },
+  {
+    "Symbol": "CLOUD",
+    "ARIMA_MAPE": 0.1888,
+    "LSTM_MAPE": 0.7001,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1888,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02139
+  },
+  {
+    "Symbol": "CLOV",
+    "ARIMA_MAPE": 0.6438,
+    "LSTM_MAPE": 1.2577,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.6438,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00555
+  },
+  {
+    "Symbol": "CLVL",
+    "ARIMA_MAPE": 0.0428,
+    "LSTM_MAPE": 0.028,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.028,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00634
+  },
+  {
+    "Symbol": "CNERGY",
+    "ARIMA_MAPE": 0.0465,
+    "LSTM_MAPE": 0.0343,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0343,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "COLG",
+    "ARIMA_MAPE": 0.0215,
+    "LSTM_MAPE": 0.0125,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0125,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "COST",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0267,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "COTT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0294,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "CPAL",
+    "ARIMA_MAPE": 0.1281,
+    "LSTM_MAPE": 0.0975,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0975,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.05582
+  },
+  {
+    "Symbol": "CPHL",
+    "ARIMA_MAPE": 0.0389,
+    "LSTM_MAPE": 0.0317,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0317,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00515
+  },
+  {
+    "Symbol": "CPPL",
+    "ARIMA_MAPE": 0.0469,
+    "LSTM_MAPE": 0.0293,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0293,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "CRTM",
+    "ARIMA_MAPE": 0.1229,
+    "LSTM_MAPE": 0.0704,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0704,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00509
+  },
+  {
+    "Symbol": "CSAP",
+    "ARIMA_MAPE": 0.0659,
+    "LSTM_MAPE": 0.0422,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0422,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "CSIL",
+    "ARIMA_MAPE": 0.0863,
+    "LSTM_MAPE": 0.0524,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0524,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01457
+  },
+  {
+    "Symbol": "CSM",
+    "ARIMA_MAPE": 0.0591,
+    "LSTM_MAPE": 0.0627,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0591,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02565
+  },
+  {
+    "Symbol": "CTM",
+    "ARIMA_MAPE": 0.0566,
+    "LSTM_MAPE": 0.033,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.033,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0088
+  },
+  {
+    "Symbol": "CWSM",
+    "ARIMA_MAPE": 0.0841,
+    "LSTM_MAPE": 0.3019,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0841,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00736
+  },
+  {
+    "Symbol": "CYAN",
+    "ARIMA_MAPE": 0.0299,
+    "LSTM_MAPE": 0.0239,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0239,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00562
+  },
+  {
+    "Symbol": "DAAG",
+    "ARIMA_MAPE": 0.0815,
+    "LSTM_MAPE": 0.0385,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0385,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00542
+  },
+  {
+    "Symbol": "DADX",
+    "ARIMA_MAPE": 0.0452,
+    "LSTM_MAPE": 0.0332,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0332,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00512
+  },
+  {
+    "Symbol": "DATM",
+    "ARIMA_MAPE": 0.1553,
+    "LSTM_MAPE": 0.4596,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1553,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "DAWH",
+    "ARIMA_MAPE": 0.0431,
+    "LSTM_MAPE": 0.0316,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0316,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "DBCI",
+    "ARIMA_MAPE": 0.0664,
+    "LSTM_MAPE": 0.0449,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0449,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00901
+  },
+  {
+    "Symbol": "DBSL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0001,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "DCL",
+    "ARIMA_MAPE": 0.068,
+    "LSTM_MAPE": 0.0379,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0379,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00535
+  },
+  {
+    "Symbol": "DCM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0127,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "DCR",
+    "ARIMA_MAPE": 0.0174,
+    "LSTM_MAPE": 0.4673,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0174,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "DCTL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0359,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "DEL",
+    "ARIMA_MAPE": 0.0688,
+    "LSTM_MAPE": 0.0468,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0468,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01194
+  },
+  {
+    "Symbol": "DFML",
+    "ARIMA_MAPE": 0.0711,
+    "LSTM_MAPE": 0.0361,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0361,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00801
+  },
+  {
+    "Symbol": "DFSM",
+    "ARIMA_MAPE": 0.0901,
+    "LSTM_MAPE": 0.0738,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0738,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00851
+  },
+  {
+    "Symbol": "DGKC",
+    "ARIMA_MAPE": 0.0564,
+    "LSTM_MAPE": 0.0377,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0377,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00571
+  },
+  {
+    "Symbol": "DHPL",
+    "ARIMA_MAPE": 0.0842,
+    "LSTM_MAPE": 0.0901,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0842,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00532
+  },
+  {
+    "Symbol": "DIIL",
+    "ARIMA_MAPE": 0.0437,
+    "LSTM_MAPE": 0.0312,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0312,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "DINT",
+    "ARIMA_MAPE": 0.0697,
+    "LSTM_MAPE": 0.0357,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0357,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "DKL",
+    "ARIMA_MAPE": 0.1442,
+    "LSTM_MAPE": 0.0847,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0847,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02304
+  },
+  {
+    "Symbol": "DKTM",
+    "ARIMA_MAPE": 0.2019,
+    "LSTM_MAPE": 0.3135,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.2019,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01661
+  },
+  {
+    "Symbol": "DLL",
+    "ARIMA_MAPE": 0.0376,
+    "LSTM_MAPE": 0.4545,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0376,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00524
+  },
+  {
+    "Symbol": "DMTM",
+    "ARIMA_MAPE": 0.077,
+    "LSTM_MAPE": 0.0833,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.077,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01301
+  },
+  {
+    "Symbol": "DMTX",
+    "ARIMA_MAPE": 0.0887,
+    "LSTM_MAPE": 0.0328,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0328,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01904
+  },
+  {
+    "Symbol": "DNCC",
+    "ARIMA_MAPE": 0.0393,
+    "LSTM_MAPE": 0.0288,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0288,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0088
+  },
+  {
+    "Symbol": "DOL",
+    "ARIMA_MAPE": 0.0381,
+    "LSTM_MAPE": 0.0215,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0215,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "DOMF",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0041,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "DSFL",
+    "ARIMA_MAPE": 0.0764,
+    "LSTM_MAPE": 0.5518,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0764,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01434
+  },
+  {
+    "Symbol": "DSIL",
+    "ARIMA_MAPE": 0.0668,
+    "LSTM_MAPE": 0.0586,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0586,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01415
+  },
+  {
+    "Symbol": "DSL",
+    "ARIMA_MAPE": 0.0455,
+    "LSTM_MAPE": 0.031,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.031,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00664
+  },
+  {
+    "Symbol": "DSML",
+    "ARIMA_MAPE": 0.0475,
+    "LSTM_MAPE": 0.5665,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0475,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.03411
+  },
+  {
+    "Symbol": "DWAE",
+    "ARIMA_MAPE": 0.0573,
+    "LSTM_MAPE": 0.0427,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0427,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00793
+  },
+  {
+    "Symbol": "DWSM",
+    "ARIMA_MAPE": 0.0554,
+    "LSTM_MAPE": 0.0353,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0353,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00537
+  },
+  {
+    "Symbol": "DWTM",
+    "ARIMA_MAPE": 0.0885,
+    "LSTM_MAPE": 0.0557,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0557,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01146
+  },
+  {
+    "Symbol": "DYNO",
+    "ARIMA_MAPE": 0.0278,
+    "LSTM_MAPE": 0.0216,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0216,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ECOP",
+    "ARIMA_MAPE": 0.0606,
+    "LSTM_MAPE": 0.0364,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0364,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00624
+  },
+  {
+    "Symbol": "EFERT",
+    "ARIMA_MAPE": 0.0302,
+    "LSTM_MAPE": 0.0924,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0302,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "EFGH",
+    "ARIMA_MAPE": 0.1222,
+    "LSTM_MAPE": 0.0626,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0626,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0104
+  },
+  {
+    "Symbol": "EFOODS",
+    "ARIMA_MAPE": 0.0633,
+    "LSTM_MAPE": 0.0619,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0619,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00673
+  },
+  {
+    "Symbol": "EFUG",
+    "ARIMA_MAPE": 0.0383,
+    "LSTM_MAPE": 0.0219,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0219,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "EFUL",
+    "ARIMA_MAPE": 0.0301,
+    "LSTM_MAPE": 0.0202,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0202,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ELCM",
+    "ARIMA_MAPE": 0.0435,
+    "LSTM_MAPE": 0.194,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0435,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ELSM",
+    "ARIMA_MAPE": 0.0281,
+    "LSTM_MAPE": 0.0179,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0179,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "EMCO",
+    "ARIMA_MAPE": 0.0959,
+    "LSTM_MAPE": 0.0619,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0619,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00998
+  },
+  {
+    "Symbol": "ENGL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.1927,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ENGRO",
+    "ARIMA_MAPE": 0.0381,
+    "LSTM_MAPE": 0.0315,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0315,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ENGROH",
+    "ARIMA_MAPE": 0.0372,
+    "LSTM_MAPE": 0.0475,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0372,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00662
+  },
+  {
+    "Symbol": "EPCL",
+    "ARIMA_MAPE": 0.0662,
+    "LSTM_MAPE": 0.0353,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0353,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00585
+  },
+  {
+    "Symbol": "EPCLPS",
+    "ARIMA_MAPE": 0.0303,
+    "LSTM_MAPE": 0.0194,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0194,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "EPQL",
+    "ARIMA_MAPE": 0.0388,
+    "LSTM_MAPE": 0.0181,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0181,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ESBL",
+    "ARIMA_MAPE": 0.1152,
+    "LSTM_MAPE": 0.0482,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0482,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0215
+  },
+  {
+    "Symbol": "EWIC",
+    "ARIMA_MAPE": 0.0627,
+    "LSTM_MAPE": 0.0376,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0376,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "EWLA",
+    "ARIMA_MAPE": 0.0933,
+    "LSTM_MAPE": 0.0352,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0352,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02714
+  },
+  {
+    "Symbol": "EXIDE",
+    "ARIMA_MAPE": 0.047,
+    "LSTM_MAPE": 0.0267,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0267,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "EXTR",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FABL",
+    "ARIMA_MAPE": 0.039,
+    "LSTM_MAPE": 0.034,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.034,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FAEL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0001,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FANM",
+    "ARIMA_MAPE": 0.0907,
+    "LSTM_MAPE": 0.0539,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0539,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00623
+  },
+  {
+    "Symbol": "FASM",
+    "ARIMA_MAPE": 0.0597,
+    "LSTM_MAPE": 0.0417,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0417,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FATIMA",
+    "ARIMA_MAPE": 0.0528,
+    "LSTM_MAPE": 0.5193,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0528,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FCCL",
+    "ARIMA_MAPE": 0.0521,
+    "LSTM_MAPE": 0.0439,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0439,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00578
+  },
+  {
+    "Symbol": "FCEL",
+    "ARIMA_MAPE": 0.076,
+    "LSTM_MAPE": 0.0496,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0496,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00917
+  },
+  {
+    "Symbol": "FCEPL",
+    "ARIMA_MAPE": 0.0414,
+    "LSTM_MAPE": 0.0248,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0248,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FCIBL",
+    "ARIMA_MAPE": 0.1679,
+    "LSTM_MAPE": 0.2712,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1679,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02724
+  },
+  {
+    "Symbol": "FCL",
+    "ARIMA_MAPE": 0.0245,
+    "LSTM_MAPE": 0.0343,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0245,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FCONM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0141,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FCSC",
+    "ARIMA_MAPE": 0.0555,
+    "LSTM_MAPE": 0.0585,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0555,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01277
+  },
+  {
+    "Symbol": "FDIBL",
+    "ARIMA_MAPE": 0.0704,
+    "LSTM_MAPE": 0.0462,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0462,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01126
+  },
+  {
+    "Symbol": "FDMF",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0005,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FDPL",
+    "ARIMA_MAPE": 0.0685,
+    "LSTM_MAPE": 0.0571,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0571,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00628
+  },
+  {
+    "Symbol": "FECM",
+    "ARIMA_MAPE": 0.0653,
+    "LSTM_MAPE": 0.3671,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0653,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01056
+  },
+  {
+    "Symbol": "FECTC",
+    "ARIMA_MAPE": 0.0721,
+    "LSTM_MAPE": 0.0555,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0555,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00956
+  },
+  {
+    "Symbol": "FEM",
+    "ARIMA_MAPE": 0.0558,
+    "LSTM_MAPE": 0.0346,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0346,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0156
+  },
+  {
+    "Symbol": "FEROZ",
+    "ARIMA_MAPE": 0.0482,
+    "LSTM_MAPE": 0.0301,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0301,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FFBL",
+    "ARIMA_MAPE": 0.0575,
+    "LSTM_MAPE": 0.0694,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0575,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00627
+  },
+  {
+    "Symbol": "FFC",
+    "ARIMA_MAPE": 0.0287,
+    "LSTM_MAPE": 0.5073,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0287,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FFL",
+    "ARIMA_MAPE": 0.0408,
+    "LSTM_MAPE": 0.0334,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0334,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FFLM",
+    "ARIMA_MAPE": 0.0642,
+    "LSTM_MAPE": 0.0463,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0463,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0107
+  },
+  {
+    "Symbol": "FFLNV",
+    "ARIMA_MAPE": 0.0689,
+    "LSTM_MAPE": 0.139,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0689,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01329
+  },
+  {
+    "Symbol": "FHAM",
+    "ARIMA_MAPE": 0.0277,
+    "LSTM_MAPE": 0.4125,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0277,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FIBLM",
+    "ARIMA_MAPE": 0.087,
+    "LSTM_MAPE": 0.0529,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0529,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01397
+  },
+  {
+    "Symbol": "FIL",
+    "ARIMA_MAPE": 0.0382,
+    "LSTM_MAPE": 0.0157,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0157,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FIM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.1501,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FIMM",
+    "ARIMA_MAPE": 0.038,
+    "LSTM_MAPE": 0.0193,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0193,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FLYNG",
+    "ARIMA_MAPE": 0.0339,
+    "LSTM_MAPE": 0.3598,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0339,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FML",
+    "ARIMA_MAPE": 0.0631,
+    "LSTM_MAPE": 0.0655,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0631,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FNBM",
+    "ARIMA_MAPE": 0.0932,
+    "LSTM_MAPE": 0.7569,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0932,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.04545
+  },
+  {
+    "Symbol": "FNEL",
+    "ARIMA_MAPE": 0.3267,
+    "LSTM_MAPE": 2.3483,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.3267,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01698
+  },
+  {
+    "Symbol": "FPJM",
+    "ARIMA_MAPE": 0.0929,
+    "LSTM_MAPE": 0.0446,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0446,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00693
+  },
+  {
+    "Symbol": "FPRM",
+    "ARIMA_MAPE": 0.0384,
+    "LSTM_MAPE": 0.0207,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0207,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0069
+  },
+  {
+    "Symbol": "FRCL",
+    "ARIMA_MAPE": 0.0399,
+    "LSTM_MAPE": 0.2534,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0399,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01043
+  },
+  {
+    "Symbol": "FRSM",
+    "ARIMA_MAPE": 0.0665,
+    "LSTM_MAPE": 0.0313,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0313,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FSWL",
+    "ARIMA_MAPE": 0.0263,
+    "LSTM_MAPE": 0.0156,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0156,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FTHM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0027,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "FTMM",
+    "ARIMA_MAPE": 0.0432,
+    "LSTM_MAPE": 0.033,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.033,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00695
+  },
+  {
+    "Symbol": "FTSM",
+    "ARIMA_MAPE": 0.1652,
+    "LSTM_MAPE": 0.0963,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0963,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.03021
+  },
+  {
+    "Symbol": "FUDLM",
+    "ARIMA_MAPE": 0.0357,
+    "LSTM_MAPE": 0.0265,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0265,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00968
+  },
+  {
+    "Symbol": "FZCM",
+    "ARIMA_MAPE": 0.0661,
+    "LSTM_MAPE": 0.0345,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0345,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00592
+  },
+  {
+    "Symbol": "GADT",
+    "ARIMA_MAPE": 0.0596,
+    "LSTM_MAPE": 0.0303,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0303,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GAIL",
+    "ARIMA_MAPE": 0.0352,
+    "LSTM_MAPE": 0.0277,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0277,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00956
+  },
+  {
+    "Symbol": "GAL",
+    "ARIMA_MAPE": 0.0728,
+    "LSTM_MAPE": 0.0843,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0728,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GAMON",
+    "ARIMA_MAPE": 0.062,
+    "LSTM_MAPE": 0.0339,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0339,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GASF",
+    "ARIMA_MAPE": 0.037,
+    "LSTM_MAPE": 0.0189,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0189,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01021
+  },
+  {
+    "Symbol": "GATI",
+    "ARIMA_MAPE": 0.0574,
+    "LSTM_MAPE": 0.0379,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0379,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GATM",
+    "ARIMA_MAPE": 0.0684,
+    "LSTM_MAPE": 0.0339,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0339,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00596
+  },
+  {
+    "Symbol": "GCIL",
+    "ARIMA_MAPE": 0.045,
+    "LSTM_MAPE": 0.0437,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0437,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00527
+  },
+  {
+    "Symbol": "GCWL",
+    "ARIMA_MAPE": 0.0412,
+    "LSTM_MAPE": 0.0518,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0412,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GEMBCEM",
+    "ARIMA_MAPE": 0.0391,
+    "LSTM_MAPE": 0.0396,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0391,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01224
+  },
+  {
+    "Symbol": "GEMBLUEX",
+    "ARIMA_MAPE": 0.0716,
+    "LSTM_MAPE": 0.122,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0716,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00575
+  },
+  {
+    "Symbol": "GEMMEL",
+    "ARIMA_MAPE": 0.0669,
+    "LSTM_MAPE": 0.0859,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0669,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GEMPAPL",
+    "ARIMA_MAPE": 0.0555,
+    "LSTM_MAPE": 0.0317,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0317,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01275
+  },
+  {
+    "Symbol": "GEMSPNL",
+    "ARIMA_MAPE": 0.0424,
+    "LSTM_MAPE": 0.2998,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0424,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01044
+  },
+  {
+    "Symbol": "GEMUNSL",
+    "ARIMA_MAPE": 0.108,
+    "LSTM_MAPE": 0.2679,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.108,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00883
+  },
+  {
+    "Symbol": "GENP",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0211,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GFIL",
+    "ARIMA_MAPE": 0.1085,
+    "LSTM_MAPE": 0.183,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1085,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01324
+  },
+  {
+    "Symbol": "GGGL",
+    "ARIMA_MAPE": 0.0488,
+    "LSTM_MAPE": 0.032,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.032,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GGL",
+    "ARIMA_MAPE": 0.0428,
+    "LSTM_MAPE": 0.0354,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0354,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00611
+  },
+  {
+    "Symbol": "GHGL",
+    "ARIMA_MAPE": 0.0373,
+    "LSTM_MAPE": 0.0303,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0303,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GHNI",
+    "ARIMA_MAPE": 0.0601,
+    "LSTM_MAPE": 0.0342,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0342,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GHNL",
+    "ARIMA_MAPE": 0.0297,
+    "LSTM_MAPE": 0.027,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.027,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00752
+  },
+  {
+    "Symbol": "GIL",
+    "ARIMA_MAPE": 0.0366,
+    "LSTM_MAPE": 0.2094,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0366,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GLAT",
+    "ARIMA_MAPE": 0.0872,
+    "LSTM_MAPE": 0.0557,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0557,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02253
+  },
+  {
+    "Symbol": "GLAXO",
+    "ARIMA_MAPE": 0.044,
+    "LSTM_MAPE": 0.1917,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.044,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GLOT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0001,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GLPL",
+    "ARIMA_MAPE": 0.0581,
+    "LSTM_MAPE": 0.1607,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0581,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00789
+  },
+  {
+    "Symbol": "GOC",
+    "ARIMA_MAPE": 0.0492,
+    "LSTM_MAPE": 0.054,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0492,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0064
+  },
+  {
+    "Symbol": "GOEM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GRR",
+    "ARIMA_MAPE": 0.0091,
+    "LSTM_MAPE": 0.0113,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0091,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GRYL",
+    "ARIMA_MAPE": 0.0455,
+    "LSTM_MAPE": 0.0692,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0455,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01429
+  },
+  {
+    "Symbol": "GSKCH",
+    "ARIMA_MAPE": 0.0419,
+    "LSTM_MAPE": 0.0522,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0419,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GSPM",
+    "ARIMA_MAPE": 0.0855,
+    "LSTM_MAPE": 0.0529,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0529,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00896
+  },
+  {
+    "Symbol": "GTECH",
+    "ARIMA_MAPE": 0.0446,
+    "LSTM_MAPE": 0.05,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0446,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00918
+  },
+  {
+    "Symbol": "GTYR",
+    "ARIMA_MAPE": 0.0532,
+    "LSTM_MAPE": 0.0383,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0383,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GUSM",
+    "ARIMA_MAPE": 0.0652,
+    "LSTM_MAPE": 0.0398,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0398,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01181
+  },
+  {
+    "Symbol": "GUTM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0006,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "GVGL",
+    "ARIMA_MAPE": 0.0434,
+    "LSTM_MAPE": 0.0295,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0295,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00537
+  },
+  {
+    "Symbol": "GWLC",
+    "ARIMA_MAPE": 0.0509,
+    "LSTM_MAPE": 0.0379,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0379,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00554
+  },
+  {
+    "Symbol": "HABSM",
+    "ARIMA_MAPE": 0.0184,
+    "LSTM_MAPE": 0.0808,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0184,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HACC",
+    "ARIMA_MAPE": 0.0385,
+    "LSTM_MAPE": 0.0254,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0254,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HADC",
+    "ARIMA_MAPE": 0.075,
+    "LSTM_MAPE": 0.331,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.075,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01655
+  },
+  {
+    "Symbol": "HAEL",
+    "ARIMA_MAPE": 0.072,
+    "LSTM_MAPE": 0.0455,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0455,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0078
+  },
+  {
+    "Symbol": "HAFL",
+    "ARIMA_MAPE": 0.0734,
+    "LSTM_MAPE": 0.1477,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0734,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HAJT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0399,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HAL",
+    "ARIMA_MAPE": 0.0495,
+    "LSTM_MAPE": 0.0523,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0495,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02088
+  },
+  {
+    "Symbol": "HALEON",
+    "ARIMA_MAPE": 0.0443,
+    "LSTM_MAPE": 0.0266,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0266,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HASCOL",
+    "ARIMA_MAPE": 0.0702,
+    "LSTM_MAPE": 0.0955,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0702,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00916
+  },
+  {
+    "Symbol": "HATM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0006,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HBL",
+    "ARIMA_MAPE": 0.0455,
+    "LSTM_MAPE": 0.0297,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0297,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HCAR",
+    "ARIMA_MAPE": 0.0493,
+    "LSTM_MAPE": 0.0327,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0327,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HCL",
+    "ARIMA_MAPE": 0.0528,
+    "LSTM_MAPE": 0.0607,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0528,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.03199
+  },
+  {
+    "Symbol": "HGFA",
+    "ARIMA_MAPE": 0.0376,
+    "LSTM_MAPE": 0.0391,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0376,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HICL",
+    "ARIMA_MAPE": 0.0373,
+    "LSTM_MAPE": 0.031,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.031,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HIFA",
+    "ARIMA_MAPE": 0.0419,
+    "LSTM_MAPE": 0.0365,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0365,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HINO",
+    "ARIMA_MAPE": 0.0428,
+    "LSTM_MAPE": 0.0418,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0418,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HINOON",
+    "ARIMA_MAPE": 0.0479,
+    "LSTM_MAPE": 0.0964,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0479,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HIRAT",
+    "ARIMA_MAPE": 0.0639,
+    "LSTM_MAPE": 0.0461,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0461,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HKKT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0037,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HMB",
+    "ARIMA_MAPE": 0.0344,
+    "LSTM_MAPE": 0.0353,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0344,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HMICL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0003,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HMIM",
+    "ARIMA_MAPE": 0.0376,
+    "LSTM_MAPE": 0.0268,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0268,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02063
+  },
+  {
+    "Symbol": "HMM",
+    "ARIMA_MAPE": 0.0859,
+    "LSTM_MAPE": 0.1458,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0859,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01957
+  },
+  {
+    "Symbol": "HPL",
+    "ARIMA_MAPE": 0.0277,
+    "LSTM_MAPE": 0.1493,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0277,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HRPL",
+    "ARIMA_MAPE": 0.0451,
+    "LSTM_MAPE": 0.3868,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0451,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0079
+  },
+  {
+    "Symbol": "HSM",
+    "ARIMA_MAPE": 0.0423,
+    "LSTM_MAPE": 0.039,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.039,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00752
+  },
+  {
+    "Symbol": "HSPI",
+    "ARIMA_MAPE": 0.0428,
+    "LSTM_MAPE": 0.0366,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0366,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01774
+  },
+  {
+    "Symbol": "HTL",
+    "ARIMA_MAPE": 0.0718,
+    "LSTM_MAPE": 0.0386,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0386,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00595
+  },
+  {
+    "Symbol": "HUBC",
+    "ARIMA_MAPE": 0.0284,
+    "LSTM_MAPE": 0.2481,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0284,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HUMNL",
+    "ARIMA_MAPE": 0.0441,
+    "LSTM_MAPE": 0.0363,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0363,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00588
+  },
+  {
+    "Symbol": "HUSI",
+    "ARIMA_MAPE": 0.0974,
+    "LSTM_MAPE": 0.0482,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0482,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "HWQS",
+    "ARIMA_MAPE": 0.0838,
+    "LSTM_MAPE": 0.0428,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0428,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01258
+  },
+  {
+    "Symbol": "IBFL",
+    "ARIMA_MAPE": 0.0521,
+    "LSTM_MAPE": 0.0908,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0521,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "IBLHL",
+    "ARIMA_MAPE": 0.0611,
+    "LSTM_MAPE": 0.0409,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0409,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01173
+  },
+  {
+    "Symbol": "ICCI",
+    "ARIMA_MAPE": 0.0488,
+    "LSTM_MAPE": 0.0366,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0366,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01111
+  },
+  {
+    "Symbol": "ICCT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0461,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ICI",
+    "ARIMA_MAPE": 0.0138,
+    "LSTM_MAPE": 0.0121,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0121,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ICIBL",
+    "ARIMA_MAPE": 0.062,
+    "LSTM_MAPE": 0.0361,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0361,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00587
+  },
+  {
+    "Symbol": "ICL",
+    "ARIMA_MAPE": 0.0499,
+    "LSTM_MAPE": 0.4803,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0499,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00683
+  },
+  {
+    "Symbol": "IDRT",
+    "ARIMA_MAPE": 0.0675,
+    "LSTM_MAPE": 0.0589,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0589,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01626
+  },
+  {
+    "Symbol": "IDSM",
+    "ARIMA_MAPE": 0.0939,
+    "LSTM_MAPE": 0.0393,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0393,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01694
+  },
+  {
+    "Symbol": "IDYM",
+    "ARIMA_MAPE": 0.0501,
+    "LSTM_MAPE": 0.0347,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0347,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00506
+  },
+  {
+    "Symbol": "IFSL",
+    "ARIMA_MAPE": 0.0607,
+    "LSTM_MAPE": 0.5747,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0607,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01778
+  },
+  {
+    "Symbol": "IGIBL",
+    "ARIMA_MAPE": 0.0521,
+    "LSTM_MAPE": 0.0466,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0466,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01543
+  },
+  {
+    "Symbol": "IGIHL",
+    "ARIMA_MAPE": 0.0529,
+    "LSTM_MAPE": 0.028,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.028,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00508
+  },
+  {
+    "Symbol": "IGIIL",
+    "ARIMA_MAPE": 0.0205,
+    "LSTM_MAPE": 0.0156,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0156,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00615
+  },
+  {
+    "Symbol": "IGIL",
+    "ARIMA_MAPE": 0.0617,
+    "LSTM_MAPE": 0.0366,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0366,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01059
+  },
+  {
+    "Symbol": "ILP",
+    "ARIMA_MAPE": 0.0478,
+    "LSTM_MAPE": 0.0298,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0298,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ILTM",
+    "ARIMA_MAPE": 0.0744,
+    "LSTM_MAPE": 0.0851,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0744,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01761
+  },
+  {
+    "Symbol": "IMAGE",
+    "ARIMA_MAPE": 0.0439,
+    "LSTM_MAPE": 0.038,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.038,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "IML",
+    "ARIMA_MAPE": 0.0547,
+    "LSTM_MAPE": 0.0396,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0396,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01174
+  },
+  {
+    "Symbol": "IMS",
+    "ARIMA_MAPE": 0.0429,
+    "LSTM_MAPE": 0.0374,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0374,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00956
+  },
+  {
+    "Symbol": "IMSL",
+    "ARIMA_MAPE": 0.0354,
+    "LSTM_MAPE": 0.0312,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0312,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02061
+  },
+  {
+    "Symbol": "INDU",
+    "ARIMA_MAPE": 0.0333,
+    "LSTM_MAPE": 0.0185,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0185,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "INIL",
+    "ARIMA_MAPE": 0.0515,
+    "LSTM_MAPE": 0.0295,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0295,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00563
+  },
+  {
+    "Symbol": "INKL",
+    "ARIMA_MAPE": 0.0449,
+    "LSTM_MAPE": 0.474,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0449,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0139
+  },
+  {
+    "Symbol": "INMF",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.136,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "IPAK",
+    "ARIMA_MAPE": 0.0443,
+    "LSTM_MAPE": 0.0849,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0443,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0053
+  },
+  {
+    "Symbol": "ISHT",
+    "ARIMA_MAPE": 0.0158,
+    "LSTM_MAPE": 0.0142,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0142,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ISIL",
+    "ARIMA_MAPE": 0.0236,
+    "LSTM_MAPE": 0.0635,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0236,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ISL",
+    "ARIMA_MAPE": 0.051,
+    "LSTM_MAPE": 0.0329,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0329,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00853
+  },
+  {
+    "Symbol": "ISTM",
+    "ARIMA_MAPE": 0.0968,
+    "LSTM_MAPE": 0.0557,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0557,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ITANZ",
+    "ARIMA_MAPE": 0.23,
+    "LSTM_MAPE": 0.7095,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.23,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ITSL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0254,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ITTEFAQ",
+    "ARIMA_MAPE": 0.0794,
+    "LSTM_MAPE": 0.0386,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0386,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0065
+  },
+  {
+    "Symbol": "JATM",
+    "ARIMA_MAPE": 0.0935,
+    "LSTM_MAPE": 0.0628,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0628,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "JDMT",
+    "ARIMA_MAPE": 0.1268,
+    "LSTM_MAPE": 0.0402,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0402,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01075
+  },
+  {
+    "Symbol": "JDWS",
+    "ARIMA_MAPE": 0.0167,
+    "LSTM_MAPE": 0.1736,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0167,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "JGICL",
+    "ARIMA_MAPE": 0.0427,
+    "LSTM_MAPE": 0.0305,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0305,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "JKSM",
+    "ARIMA_MAPE": 0.0546,
+    "LSTM_MAPE": 0.2646,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0546,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "JLICL",
+    "ARIMA_MAPE": 0.0502,
+    "LSTM_MAPE": 0.0223,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0223,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00653
+  },
+  {
+    "Symbol": "JOPP",
+    "ARIMA_MAPE": 0.0329,
+    "LSTM_MAPE": 0.3409,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0329,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.03267
+  },
+  {
+    "Symbol": "JOVC",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0197,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "JPGL",
+    "ARIMA_MAPE": 0.1576,
+    "LSTM_MAPE": 0.0981,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0981,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01026
+  },
+  {
+    "Symbol": "JSBL",
+    "ARIMA_MAPE": 0.0737,
+    "LSTM_MAPE": 0.0416,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0416,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "JSCL",
+    "ARIMA_MAPE": 0.0481,
+    "LSTM_MAPE": 0.0919,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0481,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00655
+  },
+  {
+    "Symbol": "JSGCL",
+    "ARIMA_MAPE": 0.0571,
+    "LSTM_MAPE": 0.0256,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0256,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01269
+  },
+  {
+    "Symbol": "JSIL",
+    "ARIMA_MAPE": 0.0993,
+    "LSTM_MAPE": 0.0476,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0476,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01159
+  },
+  {
+    "Symbol": "JSML",
+    "ARIMA_MAPE": 0.0833,
+    "LSTM_MAPE": 0.0821,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0821,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00928
+  },
+  {
+    "Symbol": "JUBS",
+    "ARIMA_MAPE": 0.1443,
+    "LSTM_MAPE": 0.248,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1443,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00943
+  },
+  {
+    "Symbol": "JVDC",
+    "ARIMA_MAPE": 0.0632,
+    "LSTM_MAPE": 0.0734,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0632,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0074
+  },
+  {
+    "Symbol": "JVDCPS",
+    "ARIMA_MAPE": 0.1231,
+    "LSTM_MAPE": 0.2977,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1231,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "KACM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "KAKL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.001,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "KAPCO",
+    "ARIMA_MAPE": 0.0307,
+    "LSTM_MAPE": 0.0199,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0199,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "KASBM",
+    "ARIMA_MAPE": 0.0581,
+    "LSTM_MAPE": 0.0411,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0411,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01498
+  },
+  {
+    "Symbol": "KCL",
+    "ARIMA_MAPE": 0.031,
+    "LSTM_MAPE": 0.3709,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.031,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "KEL",
+    "ARIMA_MAPE": 0.0478,
+    "LSTM_MAPE": 0.0472,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0472,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00715
+  },
+  {
+    "Symbol": "KHSM",
+    "ARIMA_MAPE": 0.0928,
+    "LSTM_MAPE": 0.2265,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0928,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01229
+  },
+  {
+    "Symbol": "KHTC",
+    "ARIMA_MAPE": 0.0435,
+    "LSTM_MAPE": 0.0272,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0272,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00582
+  },
+  {
+    "Symbol": "KHYT",
+    "ARIMA_MAPE": 0.0619,
+    "LSTM_MAPE": 0.0469,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0469,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00801
+  },
+  {
+    "Symbol": "KML",
+    "ARIMA_MAPE": 0.055,
+    "LSTM_MAPE": 0.1635,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.055,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00538
+  },
+  {
+    "Symbol": "KOHC",
+    "ARIMA_MAPE": 0.0508,
+    "LSTM_MAPE": 0.0343,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0343,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00634
+  },
+  {
+    "Symbol": "KOHE",
+    "ARIMA_MAPE": 0.0325,
+    "LSTM_MAPE": 0.0307,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0307,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "KOHP",
+    "ARIMA_MAPE": 0.099,
+    "LSTM_MAPE": 0.0783,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0783,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0073
+  },
+  {
+    "Symbol": "KOHTM",
+    "ARIMA_MAPE": 0.0494,
+    "LSTM_MAPE": 0.225,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0494,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "KOIL",
+    "ARIMA_MAPE": 0.1281,
+    "LSTM_MAPE": 0.5171,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1281,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.03078
+  },
+  {
+    "Symbol": "KOSM",
+    "ARIMA_MAPE": 0.0764,
+    "LSTM_MAPE": 0.0512,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0512,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00691
+  },
+  {
+    "Symbol": "KPUS",
+    "ARIMA_MAPE": 0.1173,
+    "LSTM_MAPE": 0.1156,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.1156,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01875
+  },
+  {
+    "Symbol": "KSBP",
+    "ARIMA_MAPE": 0.0416,
+    "LSTM_MAPE": 0.0301,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0301,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "KSTM",
+    "ARIMA_MAPE": 0.0459,
+    "LSTM_MAPE": 0.0326,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0326,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0121
+  },
+  {
+    "Symbol": "KTML",
+    "ARIMA_MAPE": 0.0679,
+    "LSTM_MAPE": 0.0439,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0439,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00985
+  },
+  {
+    "Symbol": "LCI",
+    "ARIMA_MAPE": 0.0306,
+    "LSTM_MAPE": 0.0336,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0306,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "LEUL",
+    "ARIMA_MAPE": 0.0661,
+    "LSTM_MAPE": 0.0512,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0512,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00883
+  },
+  {
+    "Symbol": "LINDE",
+    "ARIMA_MAPE": 0.0171,
+    "LSTM_MAPE": 0.0212,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0171,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "LIVEN",
+    "ARIMA_MAPE": 0.0639,
+    "LSTM_MAPE": 0.0992,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0639,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00581
+  },
+  {
+    "Symbol": "LMSM",
+    "ARIMA_MAPE": 0.098,
+    "LSTM_MAPE": 0.2272,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.098,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.03876
+  },
+  {
+    "Symbol": "LOADS",
+    "ARIMA_MAPE": 0.0477,
+    "LSTM_MAPE": 0.0314,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0314,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "LOTCHEM",
+    "ARIMA_MAPE": 0.0494,
+    "LSTM_MAPE": 0.041,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.041,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "LPCL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0289,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "LPGL",
+    "ARIMA_MAPE": 0.0365,
+    "LSTM_MAPE": 0.0467,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0365,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00556
+  },
+  {
+    "Symbol": "LPL",
+    "ARIMA_MAPE": 0.0601,
+    "LSTM_MAPE": 0.0273,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0273,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "LSECL",
+    "ARIMA_MAPE": 0.0305,
+    "LSTM_MAPE": 0.0257,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0257,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01329
+  },
+  {
+    "Symbol": "LSEFSL",
+    "ARIMA_MAPE": 0.0935,
+    "LSTM_MAPE": 0.054,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.054,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01011
+  },
+  {
+    "Symbol": "LSEPL",
+    "ARIMA_MAPE": 0.0425,
+    "LSTM_MAPE": 0.0966,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0425,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01362
+  },
+  {
+    "Symbol": "LSEVL",
+    "ARIMA_MAPE": 0.0556,
+    "LSTM_MAPE": 0.0414,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0414,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01481
+  },
+  {
+    "Symbol": "LUCK",
+    "ARIMA_MAPE": 0.0439,
+    "LSTM_MAPE": 0.0412,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0412,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00637
+  },
+  {
+    "Symbol": "MACFL",
+    "ARIMA_MAPE": 0.0499,
+    "LSTM_MAPE": 0.0357,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0357,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00804
+  },
+  {
+    "Symbol": "MACTER",
+    "ARIMA_MAPE": 0.0474,
+    "LSTM_MAPE": 0.04,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.04,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MARI",
+    "ARIMA_MAPE": 0.0299,
+    "LSTM_MAPE": 0.0207,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0207,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MCB",
+    "ARIMA_MAPE": 0.0249,
+    "LSTM_MAPE": 0.0199,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0199,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MCBAH",
+    "ARIMA_MAPE": 0.0327,
+    "LSTM_MAPE": 0.0177,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0177,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00867
+  },
+  {
+    "Symbol": "MCBIM",
+    "ARIMA_MAPE": 0.0434,
+    "LSTM_MAPE": 0.7299,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0434,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00646
+  },
+  {
+    "Symbol": "MDTL",
+    "ARIMA_MAPE": 0.0558,
+    "LSTM_MAPE": 0.0502,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0502,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00967
+  },
+  {
+    "Symbol": "MDTM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0011,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MEBL",
+    "ARIMA_MAPE": 0.0264,
+    "LSTM_MAPE": 0.5851,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0264,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MEHT",
+    "ARIMA_MAPE": 0.0531,
+    "LSTM_MAPE": 0.031,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.031,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MERIT",
+    "ARIMA_MAPE": 0.0473,
+    "LSTM_MAPE": 0.0333,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0333,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "META",
+    "ARIMA_MAPE": 0.0609,
+    "LSTM_MAPE": 0.0366,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0366,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02014
+  },
+  {
+    "Symbol": "MFFL",
+    "ARIMA_MAPE": 0.0342,
+    "LSTM_MAPE": 0.0241,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0241,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MFL",
+    "ARIMA_MAPE": 0.0762,
+    "LSTM_MAPE": 0.0624,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0624,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01302
+  },
+  {
+    "Symbol": "MFTM",
+    "ARIMA_MAPE": 0.0351,
+    "LSTM_MAPE": 0.0299,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0299,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01734
+  },
+  {
+    "Symbol": "MIRKS",
+    "ARIMA_MAPE": 0.0583,
+    "LSTM_MAPE": 0.0448,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0448,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MLCF",
+    "ARIMA_MAPE": 0.0678,
+    "LSTM_MAPE": 0.0331,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0331,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00752
+  },
+  {
+    "Symbol": "MODAM",
+    "ARIMA_MAPE": 0.0415,
+    "LSTM_MAPE": 0.0449,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0415,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0137
+  },
+  {
+    "Symbol": "MOHE",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0012,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MOIL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0024,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MOON",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0006,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MQTM",
+    "ARIMA_MAPE": 0.0643,
+    "LSTM_MAPE": 0.0466,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0466,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00774
+  },
+  {
+    "Symbol": "MRNS",
+    "ARIMA_MAPE": 0.0282,
+    "LSTM_MAPE": 0.0177,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0177,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00511
+  },
+  {
+    "Symbol": "MSCL",
+    "ARIMA_MAPE": 0.1148,
+    "LSTM_MAPE": 0.0524,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0524,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00689
+  },
+  {
+    "Symbol": "MSOT",
+    "ARIMA_MAPE": 0.0531,
+    "LSTM_MAPE": 0.0433,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0433,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0091
+  },
+  {
+    "Symbol": "MTIL",
+    "ARIMA_MAPE": 0.0609,
+    "LSTM_MAPE": 0.4387,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0609,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02518
+  },
+  {
+    "Symbol": "MTL",
+    "ARIMA_MAPE": 0.0159,
+    "LSTM_MAPE": 0.0148,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0148,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MUBT",
+    "ARIMA_MAPE": 0.144,
+    "LSTM_MAPE": 0.0609,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0609,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.03684
+  },
+  {
+    "Symbol": "MUGHAL",
+    "ARIMA_MAPE": 0.0599,
+    "LSTM_MAPE": 0.0369,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0369,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00746
+  },
+  {
+    "Symbol": "MUGHALC",
+    "ARIMA_MAPE": 0.0558,
+    "LSTM_MAPE": 0.0762,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0558,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01009
+  },
+  {
+    "Symbol": "MUKT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0339,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MUREB",
+    "ARIMA_MAPE": 0.0308,
+    "LSTM_MAPE": 0.0157,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0157,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "MWMP",
+    "ARIMA_MAPE": 0.0677,
+    "LSTM_MAPE": 0.6239,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0677,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00929
+  },
+  {
+    "Symbol": "MZSM",
+    "ARIMA_MAPE": 0.0486,
+    "LSTM_MAPE": 0.0358,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0358,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01305
+  },
+  {
+    "Symbol": "NAFL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "NAGC",
+    "ARIMA_MAPE": 0.0445,
+    "LSTM_MAPE": 0.0321,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0321,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00762
+  },
+  {
+    "Symbol": "NATF",
+    "ARIMA_MAPE": 0.0318,
+    "LSTM_MAPE": 0.0267,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0267,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "NATM",
+    "ARIMA_MAPE": 0.0893,
+    "LSTM_MAPE": 0.0799,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0799,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "NBP",
+    "ARIMA_MAPE": 0.0792,
+    "LSTM_MAPE": 0.0406,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0406,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "NCL",
+    "ARIMA_MAPE": 0.0597,
+    "LSTM_MAPE": 0.0307,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0307,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00626
+  },
+  {
+    "Symbol": "NCML",
+    "ARIMA_MAPE": 0.0716,
+    "LSTM_MAPE": 0.0464,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0464,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00534
+  },
+  {
+    "Symbol": "NCPL",
+    "ARIMA_MAPE": 0.0559,
+    "LSTM_MAPE": 0.1434,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0559,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01245
+  },
+  {
+    "Symbol": "NESTLE",
+    "ARIMA_MAPE": 0.0122,
+    "LSTM_MAPE": 0.0093,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0093,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "NETSOL",
+    "ARIMA_MAPE": 0.0506,
+    "LSTM_MAPE": 0.0284,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0284,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "NEXT",
+    "ARIMA_MAPE": 0.057,
+    "LSTM_MAPE": 0.0346,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0346,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01106
+  },
+  {
+    "Symbol": "NIB",
+    "ARIMA_MAPE": 0.0382,
+    "LSTM_MAPE": 0.0426,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0382,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "NICL",
+    "ARIMA_MAPE": 0.0356,
+    "LSTM_MAPE": 0.1365,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0356,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00569
+  },
+  {
+    "Symbol": "NINA",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0153,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "NMFL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0009,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "NML",
+    "ARIMA_MAPE": 0.0517,
+    "LSTM_MAPE": 0.0345,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0345,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00543
+  },
+  {
+    "Symbol": "NONS",
+    "ARIMA_MAPE": 0.0507,
+    "LSTM_MAPE": 0.0241,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0241,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00862
+  },
+  {
+    "Symbol": "NORS",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "NPL",
+    "ARIMA_MAPE": 0.0572,
+    "LSTM_MAPE": 0.0853,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0572,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01381
+  },
+  {
+    "Symbol": "NPSM",
+    "ARIMA_MAPE": 0.1319,
+    "LSTM_MAPE": 0.1029,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.1029,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02497
+  },
+  {
+    "Symbol": "NRL",
+    "ARIMA_MAPE": 0.0674,
+    "LSTM_MAPE": 0.037,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.037,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00706
+  },
+  {
+    "Symbol": "NRSL",
+    "ARIMA_MAPE": 0.0496,
+    "LSTM_MAPE": 0.0288,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0288,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "NSRM",
+    "ARIMA_MAPE": 0.0497,
+    "LSTM_MAPE": 0.0535,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0497,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "OBOY",
+    "ARIMA_MAPE": 0.0619,
+    "LSTM_MAPE": 0.0341,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0341,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01311
+  },
+  {
+    "Symbol": "OCTOPUS",
+    "ARIMA_MAPE": 0.0507,
+    "LSTM_MAPE": 0.1288,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0507,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "OGDC",
+    "ARIMA_MAPE": 0.043,
+    "LSTM_MAPE": 0.0393,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0393,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0055
+  },
+  {
+    "Symbol": "OLPL",
+    "ARIMA_MAPE": 0.0193,
+    "LSTM_MAPE": 0.0148,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0148,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "OLPM",
+    "ARIMA_MAPE": 0.016,
+    "LSTM_MAPE": 0.0179,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.016,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00525
+  },
+  {
+    "Symbol": "OLSM",
+    "ARIMA_MAPE": 0.0751,
+    "LSTM_MAPE": 0.0414,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0414,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01949
+  },
+  {
+    "Symbol": "OML",
+    "ARIMA_MAPE": 0.0468,
+    "LSTM_MAPE": 0.0322,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0322,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01178
+  },
+  {
+    "Symbol": "ORIXM",
+    "ARIMA_MAPE": 0.0114,
+    "LSTM_MAPE": 0.0089,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0089,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ORM",
+    "ARIMA_MAPE": 0.0281,
+    "LSTM_MAPE": 0.0296,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0281,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00555
+  },
+  {
+    "Symbol": "OTSU",
+    "ARIMA_MAPE": 0.0509,
+    "LSTM_MAPE": 0.033,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.033,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00566
+  },
+  {
+    "Symbol": "PABC",
+    "ARIMA_MAPE": 0.053,
+    "LSTM_MAPE": 0.0677,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.053,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00574
+  },
+  {
+    "Symbol": "PACE",
+    "ARIMA_MAPE": 0.0741,
+    "LSTM_MAPE": 0.0515,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0515,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01347
+  },
+  {
+    "Symbol": "PAEL",
+    "ARIMA_MAPE": 0.0594,
+    "LSTM_MAPE": 0.0357,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0357,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00514
+  },
+  {
+    "Symbol": "PAKCEM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.002,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PAKD",
+    "ARIMA_MAPE": 0.0757,
+    "LSTM_MAPE": 0.0483,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0483,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00653
+  },
+  {
+    "Symbol": "PAKL",
+    "ARIMA_MAPE": 0.0766,
+    "LSTM_MAPE": 0.1479,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0766,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01773
+  },
+  {
+    "Symbol": "PAKMI",
+    "ARIMA_MAPE": 0.0723,
+    "LSTM_MAPE": 0.0518,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0518,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02376
+  },
+  {
+    "Symbol": "PAKOXY",
+    "ARIMA_MAPE": 0.0385,
+    "LSTM_MAPE": 0.0508,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0385,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00518
+  },
+  {
+    "Symbol": "PAKRI",
+    "ARIMA_MAPE": 0.0322,
+    "LSTM_MAPE": 0.1619,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0322,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00759
+  },
+  {
+    "Symbol": "PAKT",
+    "ARIMA_MAPE": 0.0476,
+    "LSTM_MAPE": 0.0236,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0236,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PASL",
+    "ARIMA_MAPE": 0.0641,
+    "LSTM_MAPE": 0.0726,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0641,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00781
+  },
+  {
+    "Symbol": "PASM",
+    "ARIMA_MAPE": 0.0812,
+    "LSTM_MAPE": 0.0602,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0602,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00747
+  },
+  {
+    "Symbol": "PCAL",
+    "ARIMA_MAPE": 0.05,
+    "LSTM_MAPE": 0.0229,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0229,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PCML",
+    "ARIMA_MAPE": 0.0158,
+    "LSTM_MAPE": 0.0158,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0158,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PDGH",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.02,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PECO",
+    "ARIMA_MAPE": 0.0528,
+    "LSTM_MAPE": 0.1017,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0528,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00821
+  },
+  {
+    "Symbol": "PGCL",
+    "ARIMA_MAPE": 0.0258,
+    "LSTM_MAPE": 0.0287,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0258,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02279
+  },
+  {
+    "Symbol": "PGF",
+    "ARIMA_MAPE": 0.0245,
+    "LSTM_MAPE": 0.0103,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0103,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00805
+  },
+  {
+    "Symbol": "PGIC",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0008,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PGLC",
+    "ARIMA_MAPE": 0.0314,
+    "LSTM_MAPE": 0.0322,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0314,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00657
+  },
+  {
+    "Symbol": "PHDL",
+    "ARIMA_MAPE": 0.0698,
+    "LSTM_MAPE": 0.1707,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0698,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0269
+  },
+  {
+    "Symbol": "PIAA",
+    "ARIMA_MAPE": 0.0961,
+    "LSTM_MAPE": 0.066,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.066,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02075
+  },
+  {
+    "Symbol": "PIAB",
+    "ARIMA_MAPE": 0.1622,
+    "LSTM_MAPE": 0.6533,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1622,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PIAHCLA",
+    "ARIMA_MAPE": 0.0759,
+    "LSTM_MAPE": 0.0419,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0419,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01383
+  },
+  {
+    "Symbol": "PIAHCLB",
+    "ARIMA_MAPE": 0.0494,
+    "LSTM_MAPE": 0.039,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.039,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00667
+  },
+  {
+    "Symbol": "PIBTL",
+    "ARIMA_MAPE": 0.0476,
+    "LSTM_MAPE": 0.0359,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0359,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0062
+  },
+  {
+    "Symbol": "PICL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0581,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PICT",
+    "ARIMA_MAPE": 0.0614,
+    "LSTM_MAPE": 0.0489,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0489,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PIF",
+    "ARIMA_MAPE": 0.0201,
+    "LSTM_MAPE": 0.0129,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0129,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00802
+  },
+  {
+    "Symbol": "PIL",
+    "ARIMA_MAPE": 0.0883,
+    "LSTM_MAPE": 0.087,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.087,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01018
+  },
+  {
+    "Symbol": "PIM",
+    "ARIMA_MAPE": 0.083,
+    "LSTM_MAPE": 0.0832,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.083,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00549
+  },
+  {
+    "Symbol": "PINL",
+    "ARIMA_MAPE": 0.0631,
+    "LSTM_MAPE": 0.0494,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0494,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00874
+  },
+  {
+    "Symbol": "PIOC",
+    "ARIMA_MAPE": 0.0733,
+    "LSTM_MAPE": 0.2469,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0733,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00712
+  },
+  {
+    "Symbol": "PKGI",
+    "ARIMA_MAPE": 0.123,
+    "LSTM_MAPE": 0.0879,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0879,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00968
+  },
+  {
+    "Symbol": "PKGP",
+    "ARIMA_MAPE": 0.0659,
+    "LSTM_MAPE": 0.0412,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0412,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PKGS",
+    "ARIMA_MAPE": 0.0393,
+    "LSTM_MAPE": 0.0214,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0214,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PMI",
+    "ARIMA_MAPE": 0.0915,
+    "LSTM_MAPE": 0.0489,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0489,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00709
+  },
+  {
+    "Symbol": "PMPK",
+    "ARIMA_MAPE": 0.0072,
+    "LSTM_MAPE": 0.0222,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0072,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00902
+  },
+  {
+    "Symbol": "PMRS",
+    "ARIMA_MAPE": 0.0536,
+    "LSTM_MAPE": 0.0631,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0536,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PNGRS",
+    "ARIMA_MAPE": 0.1028,
+    "LSTM_MAPE": 0.0468,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0468,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01377
+  },
+  {
+    "Symbol": "PNSC",
+    "ARIMA_MAPE": 0.0505,
+    "LSTM_MAPE": 0.4917,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0505,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "POL",
+    "ARIMA_MAPE": 0.0216,
+    "LSTM_MAPE": 0.0117,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0117,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "POML",
+    "ARIMA_MAPE": 0.0508,
+    "LSTM_MAPE": 0.0345,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0345,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "POWER",
+    "ARIMA_MAPE": 0.0393,
+    "LSTM_MAPE": 0.0357,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0357,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "POWERPS",
+    "ARIMA_MAPE": 0.1108,
+    "LSTM_MAPE": 0.1183,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1108,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02107
+  },
+  {
+    "Symbol": "PPL",
+    "ARIMA_MAPE": 0.0482,
+    "LSTM_MAPE": 0.0281,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0281,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00661
+  },
+  {
+    "Symbol": "PPP",
+    "ARIMA_MAPE": 0.0432,
+    "LSTM_MAPE": 0.0277,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0277,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PPVC",
+    "ARIMA_MAPE": 0.0655,
+    "LSTM_MAPE": 0.0408,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0408,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01425
+  },
+  {
+    "Symbol": "PREMA",
+    "ARIMA_MAPE": 0.0664,
+    "LSTM_MAPE": 0.0608,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0608,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PRET",
+    "ARIMA_MAPE": 0.0431,
+    "LSTM_MAPE": 0.0351,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0351,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00813
+  },
+  {
+    "Symbol": "PRIB",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0006,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PRIC",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0015,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PRL",
+    "ARIMA_MAPE": 0.0493,
+    "LSTM_MAPE": 0.0546,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0493,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00767
+  },
+  {
+    "Symbol": "PRWM",
+    "ARIMA_MAPE": 0.0437,
+    "LSTM_MAPE": 0.024,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.024,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PSEL",
+    "ARIMA_MAPE": 0.0348,
+    "LSTM_MAPE": 0.016,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.016,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00695
+  },
+  {
+    "Symbol": "PSMC",
+    "ARIMA_MAPE": 0.0003,
+    "LSTM_MAPE": 0.018,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0003,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01866
+  },
+  {
+    "Symbol": "PSO",
+    "ARIMA_MAPE": 0.0486,
+    "LSTM_MAPE": 0.027,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.027,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PSX",
+    "ARIMA_MAPE": 0.0617,
+    "LSTM_MAPE": 0.1575,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0617,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PSYL",
+    "ARIMA_MAPE": 0.0498,
+    "LSTM_MAPE": 0.1047,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0498,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00643
+  },
+  {
+    "Symbol": "PTC",
+    "ARIMA_MAPE": 0.0489,
+    "LSTM_MAPE": 0.0437,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0437,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00941
+  },
+  {
+    "Symbol": "PTL",
+    "ARIMA_MAPE": 0.0382,
+    "LSTM_MAPE": 0.0273,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0273,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "PUDF",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0005,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "QTECH",
+    "ARIMA_MAPE": 0.0767,
+    "LSTM_MAPE": 0.1793,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0767,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0161
+  },
+  {
+    "Symbol": "QUET",
+    "ARIMA_MAPE": 0.0602,
+    "LSTM_MAPE": 0.0346,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0346,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0086
+  },
+  {
+    "Symbol": "QUICE",
+    "ARIMA_MAPE": 0.0448,
+    "LSTM_MAPE": 0.3297,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0448,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02069
+  },
+  {
+    "Symbol": "QUSW",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0002,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "RAVT",
+    "ARIMA_MAPE": 0.0519,
+    "LSTM_MAPE": 0.1446,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0519,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0144
+  },
+  {
+    "Symbol": "RCML",
+    "ARIMA_MAPE": 0.0486,
+    "LSTM_MAPE": 0.025,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.025,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00614
+  },
+  {
+    "Symbol": "REDCO",
+    "ARIMA_MAPE": 0.0448,
+    "LSTM_MAPE": 0.384,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0448,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01381
+  },
+  {
+    "Symbol": "REGAL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0003,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "REWM",
+    "ARIMA_MAPE": 0.0793,
+    "LSTM_MAPE": 0.421,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0793,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "RICL",
+    "ARIMA_MAPE": 0.0562,
+    "LSTM_MAPE": 0.0291,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0291,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00733
+  },
+  {
+    "Symbol": "RMPL",
+    "ARIMA_MAPE": 0.0173,
+    "LSTM_MAPE": 0.0103,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0103,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "RPL",
+    "ARIMA_MAPE": 0.043,
+    "LSTM_MAPE": 0.0381,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0381,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "RUBY",
+    "ARIMA_MAPE": 0.072,
+    "LSTM_MAPE": 0.0416,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0416,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0088
+  },
+  {
+    "Symbol": "RUPL",
+    "ARIMA_MAPE": 0.0573,
+    "LSTM_MAPE": 0.0381,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0381,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00661
+  },
+  {
+    "Symbol": "SAIF",
+    "ARIMA_MAPE": 0.0603,
+    "LSTM_MAPE": 0.0406,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0406,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01686
+  },
+  {
+    "Symbol": "SALT",
+    "ARIMA_MAPE": 0.0942,
+    "LSTM_MAPE": 0.0621,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0621,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01178
+  },
+  {
+    "Symbol": "SANE",
+    "ARIMA_MAPE": 0.2171,
+    "LSTM_MAPE": 0.1232,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.1232,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.04719
+  },
+  {
+    "Symbol": "SANSM",
+    "ARIMA_MAPE": 0.0837,
+    "LSTM_MAPE": 0.4032,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0837,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01019
+  },
+  {
+    "Symbol": "SAPL",
+    "ARIMA_MAPE": 0.0338,
+    "LSTM_MAPE": 0.024,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.024,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01167
+  },
+  {
+    "Symbol": "SAPT",
+    "ARIMA_MAPE": 0.0214,
+    "LSTM_MAPE": 0.0136,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0136,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SARC",
+    "ARIMA_MAPE": 0.0971,
+    "LSTM_MAPE": 0.217,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0971,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0117
+  },
+  {
+    "Symbol": "SASML",
+    "ARIMA_MAPE": 0.0562,
+    "LSTM_MAPE": 0.7219,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0562,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00884
+  },
+  {
+    "Symbol": "SAZEW",
+    "ARIMA_MAPE": 0.0495,
+    "LSTM_MAPE": 0.7203,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0495,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SBL",
+    "ARIMA_MAPE": 0.0516,
+    "LSTM_MAPE": 0.0295,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0295,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00585
+  },
+  {
+    "Symbol": "SCBPL",
+    "ARIMA_MAPE": 0.052,
+    "LSTM_MAPE": 0.1214,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.052,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SCHT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0027,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SCL",
+    "ARIMA_MAPE": 0.0882,
+    "LSTM_MAPE": 0.1559,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0882,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0053
+  },
+  {
+    "Symbol": "SDIL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0012,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SDOT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0009,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SEARL",
+    "ARIMA_MAPE": 0.0526,
+    "LSTM_MAPE": 0.0519,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0519,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SEL",
+    "ARIMA_MAPE": 0.0543,
+    "LSTM_MAPE": 0.0307,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0307,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02003
+  },
+  {
+    "Symbol": "SEPCO",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0092,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SEPL",
+    "ARIMA_MAPE": 0.0382,
+    "LSTM_MAPE": 0.0281,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0281,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SERF",
+    "ARIMA_MAPE": 0.0668,
+    "LSTM_MAPE": 0.1582,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0668,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02901
+  },
+  {
+    "Symbol": "SERT",
+    "ARIMA_MAPE": 0.0598,
+    "LSTM_MAPE": 0.0504,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0504,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01091
+  },
+  {
+    "Symbol": "SFAT",
+    "ARIMA_MAPE": 0.1607,
+    "LSTM_MAPE": 0.149,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.149,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.04202
+  },
+  {
+    "Symbol": "SFL",
+    "ARIMA_MAPE": 0.0344,
+    "LSTM_MAPE": 0.0439,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0344,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SFLL",
+    "ARIMA_MAPE": 0.0147,
+    "LSTM_MAPE": 0.0283,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0147,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SGF",
+    "ARIMA_MAPE": 0.0591,
+    "LSTM_MAPE": 0.0486,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0486,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00635
+  },
+  {
+    "Symbol": "SGFL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SGPL",
+    "ARIMA_MAPE": 0.1443,
+    "LSTM_MAPE": 0.4058,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1443,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.04124
+  },
+  {
+    "Symbol": "SHCI",
+    "ARIMA_MAPE": 0.0408,
+    "LSTM_MAPE": 0.0327,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0327,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01232
+  },
+  {
+    "Symbol": "SHCM",
+    "ARIMA_MAPE": 0.0497,
+    "LSTM_MAPE": 0.0481,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0481,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SHDT",
+    "ARIMA_MAPE": 0.0507,
+    "LSTM_MAPE": 0.065,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0507,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SHEL",
+    "ARIMA_MAPE": 0.0719,
+    "LSTM_MAPE": 0.0348,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0348,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SHEZ",
+    "ARIMA_MAPE": 0.0423,
+    "LSTM_MAPE": 0.0312,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0312,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SHFA",
+    "ARIMA_MAPE": 0.034,
+    "LSTM_MAPE": 0.1808,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.034,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SHJS",
+    "ARIMA_MAPE": 0.0508,
+    "LSTM_MAPE": 0.0265,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0265,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SHNI",
+    "ARIMA_MAPE": 0.0771,
+    "LSTM_MAPE": 0.0587,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0587,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01011
+  },
+  {
+    "Symbol": "SHSML",
+    "ARIMA_MAPE": 0.0378,
+    "LSTM_MAPE": 0.3877,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0378,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00927
+  },
+  {
+    "Symbol": "SIBL",
+    "ARIMA_MAPE": 0.057,
+    "LSTM_MAPE": 0.0353,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0353,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00976
+  },
+  {
+    "Symbol": "SICL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SIEM",
+    "ARIMA_MAPE": 0.0105,
+    "LSTM_MAPE": 0.009,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.009,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SILK",
+    "ARIMA_MAPE": 0.0317,
+    "LSTM_MAPE": 0.0825,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0317,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00549
+  },
+  {
+    "Symbol": "SINDM",
+    "ARIMA_MAPE": 0.0922,
+    "LSTM_MAPE": 0.2576,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0922,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01609
+  },
+  {
+    "Symbol": "SING",
+    "ARIMA_MAPE": 0.0487,
+    "LSTM_MAPE": 0.0248,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0248,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00719
+  },
+  {
+    "Symbol": "SITC",
+    "ARIMA_MAPE": 0.033,
+    "LSTM_MAPE": 0.2055,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.033,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SJTM",
+    "ARIMA_MAPE": 0.1194,
+    "LSTM_MAPE": 0.0909,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0909,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.06543
+  },
+  {
+    "Symbol": "SKRS",
+    "ARIMA_MAPE": 0.0665,
+    "LSTM_MAPE": 0.0363,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0363,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01065
+  },
+  {
+    "Symbol": "SLCL",
+    "ARIMA_MAPE": 0.1203,
+    "LSTM_MAPE": 0.1648,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1203,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02927
+  },
+  {
+    "Symbol": "SLGL",
+    "ARIMA_MAPE": 0.0535,
+    "LSTM_MAPE": 0.0349,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0349,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00689
+  },
+  {
+    "Symbol": "SLL",
+    "ARIMA_MAPE": 0.0704,
+    "LSTM_MAPE": 0.0634,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0634,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.03686
+  },
+  {
+    "Symbol": "SLSO",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SLYT",
+    "ARIMA_MAPE": 0.0735,
+    "LSTM_MAPE": 0.0363,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0363,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01131
+  },
+  {
+    "Symbol": "SMBL",
+    "ARIMA_MAPE": 0.0252,
+    "LSTM_MAPE": 0.0203,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0203,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00802
+  },
+  {
+    "Symbol": "SMCPL",
+    "ARIMA_MAPE": 0.0362,
+    "LSTM_MAPE": 0.484,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0362,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00862
+  },
+  {
+    "Symbol": "SML",
+    "ARIMA_MAPE": 0.0595,
+    "LSTM_MAPE": 0.048,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.048,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00686
+  },
+  {
+    "Symbol": "SMTM",
+    "ARIMA_MAPE": 0.1069,
+    "LSTM_MAPE": 0.1076,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1069,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0129
+  },
+  {
+    "Symbol": "SNAI",
+    "ARIMA_MAPE": 0.0374,
+    "LSTM_MAPE": 0.0239,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0239,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01211
+  },
+  {
+    "Symbol": "SNBL",
+    "ARIMA_MAPE": 0.0288,
+    "LSTM_MAPE": 0.0216,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0216,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SNGP",
+    "ARIMA_MAPE": 0.0395,
+    "LSTM_MAPE": 0.0269,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0269,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SPCL",
+    "ARIMA_MAPE": 0.0762,
+    "LSTM_MAPE": 0.083,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0762,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01903
+  },
+  {
+    "Symbol": "SPEL",
+    "ARIMA_MAPE": 0.0586,
+    "LSTM_MAPE": 0.0303,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0303,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SPL",
+    "ARIMA_MAPE": 0.1254,
+    "LSTM_MAPE": 0.0549,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0549,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0344
+  },
+  {
+    "Symbol": "SPLC",
+    "ARIMA_MAPE": 0.0762,
+    "LSTM_MAPE": 0.0678,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0678,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01903
+  },
+  {
+    "Symbol": "SPWL",
+    "ARIMA_MAPE": 0.0357,
+    "LSTM_MAPE": 0.2397,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0357,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SRSM",
+    "ARIMA_MAPE": 0.0728,
+    "LSTM_MAPE": 0.0895,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0728,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01141
+  },
+  {
+    "Symbol": "SRVI",
+    "ARIMA_MAPE": 0.0405,
+    "LSTM_MAPE": 0.0449,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0405,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00649
+  },
+  {
+    "Symbol": "SSGC",
+    "ARIMA_MAPE": 0.0762,
+    "LSTM_MAPE": 0.0385,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0385,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00555
+  },
+  {
+    "Symbol": "SSIC",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0006,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SSML",
+    "ARIMA_MAPE": 0.0814,
+    "LSTM_MAPE": 0.2017,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0814,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02936
+  },
+  {
+    "Symbol": "SSOM",
+    "ARIMA_MAPE": 0.0731,
+    "LSTM_MAPE": 0.3441,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0731,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "STCL",
+    "ARIMA_MAPE": 0.0643,
+    "LSTM_MAPE": 0.0312,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0312,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00551
+  },
+  {
+    "Symbol": "STJT",
+    "ARIMA_MAPE": 0.0538,
+    "LSTM_MAPE": 0.0258,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0258,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "STL",
+    "ARIMA_MAPE": 0.6059,
+    "LSTM_MAPE": 1.1976,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.6059,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00741
+  },
+  {
+    "Symbol": "STML",
+    "ARIMA_MAPE": 0.0468,
+    "LSTM_MAPE": 0.0304,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0304,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "STPL",
+    "ARIMA_MAPE": 0.0438,
+    "LSTM_MAPE": 0.0299,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0299,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00659
+  },
+  {
+    "Symbol": "STYLERS",
+    "ARIMA_MAPE": 0.0411,
+    "LSTM_MAPE": 0.0215,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0215,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.006
+  },
+  {
+    "Symbol": "SUCM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0489,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SUHJ",
+    "ARIMA_MAPE": 0.0328,
+    "LSTM_MAPE": 0.1839,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0328,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SURAJ",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SURC",
+    "ARIMA_MAPE": 0.0462,
+    "LSTM_MAPE": 0.0254,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0254,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SUTM",
+    "ARIMA_MAPE": 0.0537,
+    "LSTM_MAPE": 0.042,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.042,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0075
+  },
+  {
+    "Symbol": "SWL",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SYM",
+    "ARIMA_MAPE": 0.0456,
+    "LSTM_MAPE": 0.0395,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0395,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SYS",
+    "ARIMA_MAPE": 0.0431,
+    "LSTM_MAPE": 0.0711,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0431,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "SZTM",
+    "ARIMA_MAPE": 0.051,
+    "LSTM_MAPE": 0.0325,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0325,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "TAJT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.074,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "TATM",
+    "ARIMA_MAPE": 0.0799,
+    "LSTM_MAPE": 0.1715,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0799,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01286
+  },
+  {
+    "Symbol": "TBL",
+    "ARIMA_MAPE": 0.0381,
+    "LSTM_MAPE": 0.0618,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0381,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "TCLTC",
+    "ARIMA_MAPE": 0.1149,
+    "LSTM_MAPE": 0.6918,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1149,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01824
+  },
+  {
+    "Symbol": "TCORP",
+    "ARIMA_MAPE": 0.0433,
+    "LSTM_MAPE": 0.0218,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0218,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00889
+  },
+  {
+    "Symbol": "TCORPCPS",
+    "ARIMA_MAPE": 0.1664,
+    "LSTM_MAPE": 0.1365,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.1365,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0092
+  },
+  {
+    "Symbol": "TDIL",
+    "ARIMA_MAPE": 0.0815,
+    "LSTM_MAPE": 0.029,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.029,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00943
+  },
+  {
+    "Symbol": "TELE",
+    "ARIMA_MAPE": 0.0579,
+    "LSTM_MAPE": 0.0429,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0429,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00761
+  },
+  {
+    "Symbol": "TGL",
+    "ARIMA_MAPE": 0.0635,
+    "LSTM_MAPE": 0.1002,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0635,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "THALL",
+    "ARIMA_MAPE": 0.0392,
+    "LSTM_MAPE": 0.033,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.033,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "THAS",
+    "ARIMA_MAPE": 0.1333,
+    "LSTM_MAPE": 0.7762,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.1333,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02494
+  },
+  {
+    "Symbol": "THCCL",
+    "ARIMA_MAPE": 0.0447,
+    "LSTM_MAPE": 0.0511,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0447,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00712
+  },
+  {
+    "Symbol": "TICL",
+    "ARIMA_MAPE": 0.0526,
+    "LSTM_MAPE": 0.0647,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0526,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "TOMCL",
+    "ARIMA_MAPE": 0.0516,
+    "LSTM_MAPE": 0.047,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.047,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00664
+  },
+  {
+    "Symbol": "TOWL",
+    "ARIMA_MAPE": 0.0857,
+    "LSTM_MAPE": 0.035,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.035,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "TPL",
+    "ARIMA_MAPE": 0.0783,
+    "LSTM_MAPE": 0.0464,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0464,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01218
+  },
+  {
+    "Symbol": "TPLI",
+    "ARIMA_MAPE": 0.0365,
+    "LSTM_MAPE": 0.022,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.022,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00947
+  },
+  {
+    "Symbol": "TPLL",
+    "ARIMA_MAPE": 0.0588,
+    "LSTM_MAPE": 0.0359,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0359,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0107
+  },
+  {
+    "Symbol": "TPLP",
+    "ARIMA_MAPE": 0.0876,
+    "LSTM_MAPE": 0.0509,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0509,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00732
+  },
+  {
+    "Symbol": "TPLRF1",
+    "ARIMA_MAPE": 0.0331,
+    "LSTM_MAPE": 0.2068,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0331,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00659
+  },
+  {
+    "Symbol": "TPLT",
+    "ARIMA_MAPE": 0.0641,
+    "LSTM_MAPE": 0.0494,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0494,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0109
+  },
+  {
+    "Symbol": "TREET",
+    "ARIMA_MAPE": 0.0562,
+    "LSTM_MAPE": 0.0548,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0548,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "TREI",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.017,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "TRG",
+    "ARIMA_MAPE": 0.0583,
+    "LSTM_MAPE": 0.0359,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0359,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0054
+  },
+  {
+    "Symbol": "TRIBL",
+    "ARIMA_MAPE": 0.091,
+    "LSTM_MAPE": 0.1892,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.091,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01732
+  },
+  {
+    "Symbol": "TRIPF",
+    "ARIMA_MAPE": 0.0671,
+    "LSTM_MAPE": 0.0349,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0349,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00613
+  },
+  {
+    "Symbol": "TRPOL",
+    "ARIMA_MAPE": 0.0598,
+    "LSTM_MAPE": 0.0316,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0316,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00732
+  },
+  {
+    "Symbol": "TRSM",
+    "ARIMA_MAPE": 0.1164,
+    "LSTM_MAPE": 0.0737,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0737,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02052
+  },
+  {
+    "Symbol": "TSBL",
+    "ARIMA_MAPE": 0.147,
+    "LSTM_MAPE": 1.0686,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.147,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.02112
+  },
+  {
+    "Symbol": "TSMF",
+    "ARIMA_MAPE": 0.0661,
+    "LSTM_MAPE": 0.0453,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0453,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00586
+  },
+  {
+    "Symbol": "TSML",
+    "ARIMA_MAPE": 0.0571,
+    "LSTM_MAPE": 0.0328,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0328,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "TSPL",
+    "ARIMA_MAPE": 0.0716,
+    "LSTM_MAPE": 0.0572,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0572,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00902
+  },
+  {
+    "Symbol": "UBDL",
+    "ARIMA_MAPE": 0.0335,
+    "LSTM_MAPE": 0.0699,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0335,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.0053
+  },
+  {
+    "Symbol": "UBL",
+    "ARIMA_MAPE": 0.0632,
+    "LSTM_MAPE": 0.2387,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0632,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "UCAPM",
+    "ARIMA_MAPE": 0.11,
+    "LSTM_MAPE": 0.0539,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0539,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01226
+  },
+  {
+    "Symbol": "UDLI",
+    "ARIMA_MAPE": 0.0519,
+    "LSTM_MAPE": 0.036,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.036,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01094
+  },
+  {
+    "Symbol": "UDPL",
+    "ARIMA_MAPE": 0.0279,
+    "LSTM_MAPE": 0.0274,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0274,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "UNIC",
+    "ARIMA_MAPE": 0.0231,
+    "LSTM_MAPE": 0.0216,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0216,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "UNITY",
+    "ARIMA_MAPE": 0.125,
+    "LSTM_MAPE": 0.0611,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0611,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "UPFL",
+    "ARIMA_MAPE": 0.0213,
+    "LSTM_MAPE": 0.0171,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0171,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "USMT",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.021,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "UVIC",
+    "ARIMA_MAPE": 0.0405,
+    "LSTM_MAPE": 0.032,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.032,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01125
+  },
+  {
+    "Symbol": "WAFI",
+    "ARIMA_MAPE": 0.0386,
+    "LSTM_MAPE": 0.0245,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0245,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00502
+  },
+  {
+    "Symbol": "WAHN",
+    "ARIMA_MAPE": 0.0436,
+    "LSTM_MAPE": 0.0296,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0296,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "WASL",
+    "ARIMA_MAPE": 0.0737,
+    "LSTM_MAPE": 0.0586,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0586,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00562
+  },
+  {
+    "Symbol": "WAVES",
+    "ARIMA_MAPE": 0.0471,
+    "LSTM_MAPE": 0.0466,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0466,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00682
+  },
+  {
+    "Symbol": "WAVESAPP",
+    "ARIMA_MAPE": 0.0555,
+    "LSTM_MAPE": 0.1504,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0555,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "WHALE",
+    "ARIMA_MAPE": 0.063,
+    "LSTM_MAPE": 0.1705,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.063,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.01041
+  },
+  {
+    "Symbol": "WTL",
+    "ARIMA_MAPE": 0.0562,
+    "LSTM_MAPE": 0.0368,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0368,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00809
+  },
+  {
+    "Symbol": "WYETH",
+    "ARIMA_MAPE": 0.0115,
+    "LSTM_MAPE": 0.0199,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0115,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00592
+  },
+  {
+    "Symbol": "YOUW",
+    "ARIMA_MAPE": 0.08,
+    "LSTM_MAPE": 0.0482,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.0482,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00652
+  },
+  {
+    "Symbol": "ZAHID",
+    "ARIMA_MAPE": 0.0798,
+    "LSTM_MAPE": 0.1945,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0798,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ZAL",
+    "ARIMA_MAPE": 0.091,
+    "LSTM_MAPE": 0.2051,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.091,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00763
+  },
+  {
+    "Symbol": "ZELP",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.0037,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ZHCM",
+    "ARIMA_MAPE": 0.0,
+    "LSTM_MAPE": 0.3445,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.0,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  },
+  {
+    "Symbol": "ZIL",
+    "ARIMA_MAPE": 0.085,
+    "LSTM_MAPE": 0.3467,
+    "Best_Model": "ARIMA",
+    "Best_MAPE": 0.085,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.00664
+  },
+  {
+    "Symbol": "ZTL",
+    "ARIMA_MAPE": 0.0717,
+    "LSTM_MAPE": 0.031,
+    "Best_Model": "LSTM",
+    "Best_MAPE": 0.031,
+    "BacktestDays": 60,
+    "DirectionThreshold": 0.005
+  }
+]

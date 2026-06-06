@@ -1,0 +1,26 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": { "buildType": "apk" },
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://finmate-api-rc4z2jb2kq-uc.a.run.app/api/v1",
+        "EXPO_PUBLIC_CHAT_API_BASE_URL": "https://34-72-241-101.sslip.io"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://finmate-api-rc4z2jb2kq-uc.a.run.app/api/v1",
+        "EXPO_PUBLIC_CHAT_API_BASE_URL": "https://34-72-241-101.sslip.io"
+      }
+    }
+  }
+}

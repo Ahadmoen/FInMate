@@ -1,0 +1,222 @@
+[
+  {
+    "id": "PL-001",
+    "intent": "PRICE_LOOKUP",
+    "query": "What is PSO's current closing price?",
+    "expected_tickers": ["PSO"],
+    "expected_fields": ["close_price"],
+    "must_not_hallucinate": true,
+    "smoke": true
+  },
+  {
+    "id": "PL-002",
+    "intent": "PRICE_LOOKUP",
+    "query": "Show me OGDC open and close price today",
+    "expected_tickers": ["OGDC"],
+    "expected_fields": ["open_price", "close_price"],
+    "must_not_hallucinate": true,
+    "smoke": true
+  },
+  {
+    "id": "PL-003",
+    "intent": "PRICE_LOOKUP",
+    "query": "What was HBL's high and low today?",
+    "expected_tickers": ["HBL"],
+    "expected_fields": ["high", "low"],
+    "must_not_hallucinate": true,
+    "smoke": false
+  },
+  {
+    "id": "PL-004",
+    "intent": "PRICE_LOOKUP",
+    "query": "What is the current price of ENGRO?",
+    "expected_tickers": ["ENGRO"],
+    "expected_fields": ["close_price"],
+    "must_not_hallucinate": true,
+    "smoke": false
+  },
+  {
+    "id": "AN-001",
+    "intent": "ANALYTICS",
+    "query": "Which PSX stocks are the top 5 gainers today?",
+    "expected_tickers": [],
+    "expected_fields": ["ticker", "change_pct"],
+    "must_not_hallucinate": true,
+    "smoke": true
+  },
+  {
+    "id": "AN-002",
+    "intent": "ANALYTICS",
+    "query": "Show me the top 5 losers on PSX today",
+    "expected_tickers": [],
+    "expected_fields": ["ticker", "change_pct"],
+    "must_not_hallucinate": true,
+    "smoke": true
+  },
+  {
+    "id": "AN-003",
+    "intent": "ANALYTICS",
+    "query": "Which stocks have the highest trading volume today?",
+    "expected_tickers": [],
+    "expected_fields": ["ticker", "volume"],
+    "must_not_hallucinate": true,
+    "smoke": false
+  },
+  {
+    "id": "AN-004",
+    "intent": "ANALYTICS",
+    "query": "What are the current BUY signals on PSX?",
+    "expected_tickers": [],
+    "expected_fields": ["ticker", "signal", "confidence"],
+    "must_not_hallucinate": true,
+    "smoke": false
+  },
+  {
+    "id": "FU-001",
+    "intent": "FUNDAMENTALS",
+    "query": "What is PSO's trading signal and confidence level?",
+    "expected_tickers": ["PSO"],
+    "expected_fields": ["signal", "confidence"],
+    "must_not_hallucinate": true,
+    "smoke": true
+  },
+  {
+    "id": "FU-002",
+    "intent": "FUNDAMENTALS",
+    "query": "What is OGDC's price forecast and direction?",
+    "expected_tickers": ["OGDC"],
+    "expected_fields": ["direction", "predicted_price"],
+    "must_not_hallucinate": true,
+    "smoke": true
+  },
+  {
+    "id": "FU-003",
+    "intent": "FUNDAMENTALS",
+    "query": "Should I buy HBL? What does the AI signal say?",
+    "expected_tickers": ["HBL"],
+    "expected_fields": ["signal", "reason"],
+    "must_not_hallucinate": true,
+    "smoke": false
+  },
+  {
+    "id": "FU-004",
+    "intent": "FUNDAMENTALS",
+    "query": "What is LUCK cement's forecast price and confidence?",
+    "expected_tickers": ["LUCK"],
+    "expected_fields": ["predicted_price", "confidence"],
+    "must_not_hallucinate": true,
+    "smoke": false
+  },
+  {
+    "id": "FU-005",
+    "intent": "FUNDAMENTALS",
+    "query": "What is ENGRO's AI trading signal today?",
+    "expected_tickers": ["ENGRO"],
+    "expected_fields": ["signal", "dominant_sentiment"],
+    "must_not_hallucinate": true,
+    "smoke": false
+  },
+  {
+    "id": "NQ-001",
+    "intent": "NEWS_QA",
+    "query": "Why did PSO drop recently? What's the latest news?",
+    "expected_tickers": ["PSO"],
+    "expected_fields": ["answer", "citations"],
+    "must_not_hallucinate": true,
+    "requires_vector": true,
+    "smoke": true
+  },
+  {
+    "id": "NQ-002",
+    "intent": "NEWS_QA",
+    "query": "What news is driving OGDC's stock movement?",
+    "expected_tickers": ["OGDC"],
+    "expected_fields": ["answer", "citations"],
+    "must_not_hallucinate": true,
+    "requires_vector": true,
+    "smoke": false
+  },
+  {
+    "id": "NQ-003",
+    "intent": "NEWS_QA",
+    "query": "What is the market sentiment around HBL lately?",
+    "expected_tickers": ["HBL"],
+    "expected_fields": ["answer"],
+    "must_not_hallucinate": true,
+    "requires_vector": true,
+    "smoke": false
+  },
+  {
+    "id": "NQ-004",
+    "intent": "NEWS_QA",
+    "query": "Are there any positive news events for ENGRO recently?",
+    "expected_tickers": ["ENGRO"],
+    "expected_fields": ["answer"],
+    "must_not_hallucinate": true,
+    "requires_vector": true,
+    "smoke": false
+  },
+  {
+    "id": "CO-001",
+    "intent": "COMPARISON",
+    "query": "Compare HBL and MCB stock performance today",
+    "expected_tickers": ["HBL", "MCB"],
+    "expected_fields": ["answer"],
+    "must_not_hallucinate": true,
+    "smoke": true
+  },
+  {
+    "id": "CO-002",
+    "intent": "COMPARISON",
+    "query": "Which is a better buy right now — PSO or OGDC?",
+    "expected_tickers": ["PSO", "OGDC"],
+    "expected_fields": ["answer"],
+    "must_not_hallucinate": true,
+    "smoke": false
+  },
+  {
+    "id": "CO-003",
+    "intent": "COMPARISON",
+    "query": "Compare LUCK and MLCF cement stocks — prices and signals",
+    "expected_tickers": ["LUCK", "MLCF"],
+    "expected_fields": ["answer"],
+    "must_not_hallucinate": true,
+    "smoke": false
+  },
+  {
+    "id": "MS-001",
+    "intent": "MULTI_STEP",
+    "query": "Find PSX stocks where the AI signal is BUY but news sentiment is negative",
+    "expected_tickers": [],
+    "expected_fields": ["answer", "tool_calls_made"],
+    "must_not_hallucinate": true,
+    "smoke": false
+  },
+  {
+    "id": "GR-001",
+    "intent": "GENERAL",
+    "query": "What is the Pakistan Stock Exchange?",
+    "expected_tickers": [],
+    "expected_fields": ["answer"],
+    "must_not_hallucinate": false,
+    "smoke": true
+  },
+  {
+    "id": "GR-002",
+    "intent": "GENERAL",
+    "query": "Hello AIVA, what can you help me with?",
+    "expected_tickers": [],
+    "expected_fields": ["answer"],
+    "must_not_hallucinate": false,
+    "smoke": false
+  },
+  {
+    "id": "GR-003",
+    "intent": "GENERAL",
+    "query": "What time does PSX open?",
+    "expected_tickers": [],
+    "expected_fields": ["answer"],
+    "must_not_hallucinate": false,
+    "smoke": false
+  }
+]

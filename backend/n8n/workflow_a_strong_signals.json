@@ -1,0 +1,691 @@
+{
+  "name": "FinMate — Generic Strong Signal Broadcast (Top Pick + Digest)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "0 4 * * 1-5" }] }
+      },
+      "id": "sched-pre",
+      "name": "09:00 PKT (Pre-market)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-1440, -200]
+    },
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "0 7 * * 1-5" }] }
+      },
+      "id": "sched-mid",
+      "name": "12:00 PKT (Mid-session)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-1440, 0]
+    },
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "40 13 * * 1-5" }] }
+      },
+      "id": "sched-post",
+      "name": "18:40 PKT (Post-market)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-1440, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const nowUtc = new Date();\nconst pktHour = (nowUtc.getUTCHours() + 5) % 24;\nlet window = 'post_market';\nlet windowLabel = 'Post-Market Recap';\nlet alertWindow = 'POST_MARKET';\nif (pktHour >= 7 && pktHour < 11) {\n  window = 'pre_market'; windowLabel = 'Pre-Market Outlook'; alertWindow = 'PRE_MARKET';\n} else if (pktHour >= 11 && pktHour < 16) {\n  window = 'mid_session'; windowLabel = 'Mid-Session Update'; alertWindow = 'MID_SESSION';\n}\nreturn [{ json: { window, window_label: windowLabel, alert_window: alertWindow, fired_at: nowUtc.toISOString() } }];"
+      },
+      "id": "detect-window",
+      "name": "Detect window",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-1200, 0]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/stock_signal",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" }
+          ]
+        },
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "signal", "value": "eq.STRONG_BUY" },
+            { "name": "suggestion_confidence", "value": "eq.HIGH" },
+            { "name": "order", "value": "blended_score.desc" },
+            { "name": "select", "value": "ticker,signal,suggestion_confidence,confidence,blended_score,forecast_signed_score,signal_strength,reason,health_label,horizon,dominant_sentiment,contributions,generated_at" }
+          ]
+        }
+      },
+      "id": "fetch-signals",
+      "name": "Fetch STRONG_BUY signals",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [-960, 0]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/notification_preference",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" }
+          ]
+        },
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "={{ $('Detect window').first().json.window }}", "value": "eq.true" },
+            { "name": "or", "value": "(email_enabled.eq.true,slack_enabled.eq.true)" },
+            { "name": "select", "value": "id,email_enabled,slack_enabled,user:user_id(id,username,email,slack_webhook)" }
+          ]
+        }
+      },
+      "id": "fetch-users",
+      "name": "Fetch eligible users",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [-720, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "/*\n * Split signals into top pick (highest blended_score) and the rest.\n * Emit ONE item carrying both branches' inputs + the audience + window context.\n * Downstream the workflow forks into 'Top branch' and 'Digest branch'.\n */\nconst signals = $('Fetch STRONG_BUY signals').all().map(i => i.json);\nconst users = $('Fetch eligible users').all().map(i => i.json);\nconst windowCtx = $('Detect window').first().json;\n\nif (signals.length === 0 || users.length === 0) return [];\n\nreturn [{\n  json: {\n    top: signals[0],\n    rest: signals.slice(1),\n    audience: users,\n    window: windowCtx.window,\n    window_label: windowCtx.window_label,\n    alert_window: windowCtx.alert_window,\n  },\n}];"
+      },
+      "id": "prep-split",
+      "name": "Split top + rest",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-480, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "/* TOP BRANCH — emit 1 item with the top signal + audience + window. */\nconst src = $input.first().json;\nreturn [{\n  json: {\n    ...src.top,\n    audience: src.audience,\n    window: src.window,\n    window_label: src.window_label,\n    alert_window: src.alert_window,\n  },\n}];"
+      },
+      "id": "top-prep",
+      "name": "Top: prep",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-240, -240]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/live_market_data",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" }
+          ]
+        },
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "ticker", "value": "=eq.{{ $json.ticker }}" },
+            { "name": "select", "value": "ticker,close,change_pct,rsi14,ma20,ma50,ma200,volatility20d,volume_ratio,eps,date" },
+            { "name": "limit", "value": "1" }
+          ]
+        }
+      },
+      "id": "top-fetch-live",
+      "name": "Top: fetch live",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [0, -300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/news_sentiment",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" }
+          ]
+        },
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "ticker", "value": "=eq.{{ $json.ticker }}" },
+            { "name": "select", "value": "headline,link,source,sentiment,score,published_at" },
+            { "name": "order", "value": "published_at.desc" },
+            { "name": "limit", "value": "2" }
+          ]
+        }
+      },
+      "id": "top-fetch-news",
+      "name": "Top: fetch news",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [0, -180]
+    },
+    {
+      "parameters": {
+        "jsCode": "const src = $('Top: prep').first().json;\nlet live = {};\nlet news = [];\ntry { live = ($('Top: fetch live').all().map(i => i.json))[0] || {}; } catch (e) {}\ntry { news = $('Top: fetch news').all().map(i => i.json); } catch (e) {}\n\n// Build Gemini request body server-side — embedding JSON.stringify\n// inside the HTTP node's jsonBody template double-escapes badly.\nconst userContent = `Stock: ${src.ticker}\\nSignal: STRONG BUY (confidence: ${src.suggestion_confidence})\\nHealth label: ${src.health_label}\\nDirectional horizon: ${src.horizon}d\\nBlended score: ${src.blended_score}\\nSignal strength: ${src.signal_strength}\\nForecast signed score: ${src.forecast_signed_score}\\nReason: ${src.reason}\\nDominant news sentiment: ${src.dominant_sentiment}\\nContributions: ${JSON.stringify(src.contributions)}\\n\\nCurrent: close = ${live.close}, change = ${live.change_pct}%, RSI14 = ${live.rsi14}, MA20 = ${live.ma20}, MA50 = ${live.ma50}, MA200 = ${live.ma200}, volatility20d = ${live.volatility20d}, volume_ratio = ${live.volume_ratio}, EPS = ${live.eps}.\\n\\nTop news headlines:\\n- ${(news[0] && news[0].headline) || 'none'}\\n- ${(news[1] && news[1].headline) || 'none'}\\n\\nWrite the explanation now. Start with the recommendation, weave the specific numbers into your reasoning, end with a confident closing statement (NOT a risk warning).`;\n\nconst geminiBody = {\n  systemInstruction: {\n    parts: [{ text: \"You are FinMate, a Pakistani stock-market assistant writing for everyday investors who don't know what RSI or MA50 means. Write a confident, friendly 5-7 sentence explanation of why this stock signal was issued. Translate technical terms into meaning, don't define them. Cite specific numbers from the data (price, change %, RSI level, MA crossover position, volume vs 20-day average, EPS if relevant) to back up the recommendation. Mention the news context if relevant. Be direct — DO NOT add disclaimers, risk warnings, hedging language, 'consult an advisor' lines, or 'this is not financial advice' caveats.\" }],\n  },\n  contents: [{ role: 'user', parts: [{ text: userContent }] }],\n  generationConfig: { maxOutputTokens: 1500, temperature: 0.7, thinkingConfig: { thinkingBudget: 0 } },\n};\n\nreturn [{ json: { ...src, live, news, gemini_body: geminiBody } }];"
+      },
+      "id": "top-join",
+      "name": "Top: join context",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [240, -240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "x-goog-api-key", "value": "={{ $env.GEMINI_API_KEY }}" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.gemini_body) }}"
+      },
+      "id": "top-claude",
+      "name": "Top: Claude detailed",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, -240],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 65000,
+      "onError": "continueRegularOutput",
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "/*\n * Build detailed HTML + Slack Block Kit payload for the TOP PICK,\n * then fan out to (user × channel) rows. Each row carries the\n * ticker so the next node creates a per-user Alert in DB.\n *\n * Audience is read from Top: prep directly (the canonical source\n * with exactly one entry per user). Re-reading from join context\n * would risk amplification if upstream had multiple runs.\n */\nconst src = $('Top: prep').first().json;\nconst joinCtx = $('Top: join context').first().json;\nsrc.live = joinCtx.live || {};\nsrc.news = joinCtx.news || [];\nconst llmResp = $input.first().json;\nconst plainEnglish = llmResp?.candidates?.[0]?.content?.parts?.[0]?.text || src.reason;\n\nconst ticker = src.ticker;\nconst windowLabel = src.window_label;\nconst alertWindow = src.alert_window;\nconst live = src.live || {};\nconst news = src.news || [];\n\nconst safeNum = (v, d = 2) => (v != null && !isNaN(v) ? Number(v).toFixed(d) : '—');\nconst pct = live.change_pct != null ? Number(live.change_pct) : 0;\nconst pctSign = pct >= 0 ? '+' : '';\n\nconst newsHtml = news.length\n  ? news.map(n => `<li style=\\\"margin: 4px 0;\\\"><a href=\\\"${n.link}\\\" style=\\\"color: #2563eb; text-decoration: none;\\\">${n.headline}</a> <span style=\\\"color: #6b7280; font-size: 12px;\\\">· ${n.source} · ${n.sentiment}</span></li>`).join('')\n  : '<li style=\\\"color: #6b7280;\\\">No recent news</li>';\n\nconst html = `\n<div style=\\\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 560px; margin: 0 auto; padding: 24px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px;\\\">\n  <div style=\\\"display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #f3f4f6; padding-bottom: 12px; margin-bottom: 16px;\\\">\n    <h1 style=\\\"margin: 0; font-size: 22px; font-weight: 700; color: #1f2937;\\\">Fin<span style=\\\"color: #2563eb;\\\">Mate</span></h1>\n    <span style=\\\"font-size: 12px; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px;\\\">Top Pick · ${windowLabel}</span>\n  </div>\n\n  <div style=\\\"background: #ecfdf5; border-left: 4px solid #16a34a; padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; font-size: 14px; color: #14532d;\\\">\n    <strong>Today's top pick</strong> — our highest-confidence STRONG BUY across the market.\n  </div>\n\n  <div style=\\\"background: #f9fafb; border-radius: 10px; padding: 16px; margin-bottom: 16px;\\\">\n    <div style=\\\"display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;\\\">\n      <h2 style=\\\"margin: 0; font-size: 28px; font-weight: 700; color: #1f2937;\\\">${ticker}</h2>\n      <span style=\\\"font-size: 14px; font-weight: 600; color: #16a34a;\\\">▲ STRONG BUY</span>\n    </div>\n    <div style=\\\"font-size: 14px; color: #4b5563;\\\">\n      <strong style=\\\"color: #1f2937;\\\">PKR ${safeNum(live.close)}</strong>\n      &nbsp;·&nbsp; <span style=\\\"color: ${pct >= 0 ? '#16a34a' : '#dc2626'};\\\">${pctSign}${safeNum(pct)}%</span>\n      &nbsp;·&nbsp; confidence: <strong>${src.suggestion_confidence}</strong>\n    </div>\n  </div>\n\n  <p style=\\\"font-size: 15px; line-height: 1.6; color: #374151; margin: 0 0 16px 0;\\\">${plainEnglish}</p>\n\n  <table style=\\\"width: 100%; font-size: 13px; color: #4b5563; border-collapse: collapse; margin-bottom: 16px;\\\">\n    <tr style=\\\"background: #f9fafb;\\\">\n      <td style=\\\"padding: 8px 12px; border-radius: 6px 0 0 6px;\\\">RSI 14</td>\n      <td style=\\\"padding: 8px 12px; text-align: right;\\\"><strong>${safeNum(live.rsi14, 1)}</strong></td>\n      <td style=\\\"padding: 8px 12px;\\\">MA 50</td>\n      <td style=\\\"padding: 8px 12px; text-align: right; border-radius: 0 6px 6px 0;\\\"><strong>${safeNum(live.ma50)}</strong></td>\n    </tr>\n    <tr>\n      <td style=\\\"padding: 8px 12px;\\\">MA 200</td>\n      <td style=\\\"padding: 8px 12px; text-align: right;\\\"><strong>${safeNum(live.ma200)}</strong></td>\n      <td style=\\\"padding: 8px 12px;\\\">Volatility</td>\n      <td style=\\\"padding: 8px 12px; text-align: right;\\\"><strong>${safeNum((live.volatility20d || 0) * 100, 1)}%</strong></td>\n    </tr>\n  </table>\n\n  <h3 style=\\\"font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: #6b7280; margin: 0 0 8px 0;\\\">Recent news</h3>\n  <ul style=\\\"list-style: none; padding-left: 0; margin: 0 0 20px 0; font-size: 14px;\\\">\n    ${newsHtml}\n  </ul>\n\n  <div style=\\\"border-top: 1px solid #f3f4f6; padding-top: 12px; font-size: 12px; color: #6b7280; text-align: center;\\\">\n    Don't understand a number? <a href=\\\"https://finmate.app/docs/notifications\\\" style=\\\"color: #2563eb;\\\">Read the guide →</a><br>\n    Sent by FinMate · ${new Date(src.generated_at).toLocaleString('en-PK', { timeZone: 'Asia/Karachi' })} PKT\n  </div>\n</div>`.trim();\n\nconst plain = `Top Pick: ${ticker} — STRONG BUY (${src.suggestion_confidence})\\n\\n${plainEnglish}\\n\\nRSI ${safeNum(live.rsi14, 1)} · MA50 ${safeNum(live.ma50)} · MA200 ${safeNum(live.ma200)}\\n\\nDocs: https://finmate.app/docs/notifications`;\n\nconst nowIso = new Date().toISOString();\nconst newUuid = () => 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => { const r = Math.random() * 16 | 0; return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16); });\n\nconst alertDetailPayload = {\n  ticker, signal: 'STRONG_BUY', confidence: src.suggestion_confidence,\n  close: live.close, change_pct: live.change_pct,\n  rsi14: live.rsi14, ma50: live.ma50, ma200: live.ma200, volatility20d: live.volatility20d,\n  news: (news || []).map(n => ({ headline: n.headline, link: n.link, source: n.source, sentiment: n.sentiment })),\n  summary: plainEnglish, window_label: windowLabel, type: 'TOP_PICK',\n};\n\nconst symbols = [ticker];\n\nconst buildIds = (userId) => {\n  const alertRowId = newUuid();\n  const alertDetailId = newUuid();\n  const notificationId = newUuid();\n  const alertLogId = newUuid();\n  return {\n    alert_row_id: alertRowId,\n    alert_log_id: alertLogId,\n    alert_detail_id: alertDetailId,\n    notification_id: notificationId,\n    now_iso: nowIso,\n    symbols,\n    create_alert_body: { id: alertRowId, user_id: userId, ticker, symbols, signal: 'BUY', reason: plainEnglish, alert_window: alertWindow, created_at: nowIso, updated_at: nowIso },\n    create_alert_detail_body: { id: alertDetailId, alert_id: alertRowId, payload: alertDetailPayload, created_at: nowIso, updated_at: nowIso },\n    create_notification_body: { id: notificationId, user_id: userId, alert_id: alertRowId, type: 'TOP_PICK', category: 'stock', created_at: nowIso, updated_at: nowIso },\n  };\n};\n\nconst rows = [];\nconst seenUsers = new Set();\nfor (const u of (src.audience || [])) {\n  const user = u.user || {};\n  if (!user.id || seenUsers.has(user.id)) continue;\n  seenUsers.add(user.id);\n  const channels = [];\n  if (u.email_enabled && user.email) {\n    channels.push({\n      channel: 'email', alert_log_id: newUuid(), to: user.email,\n      subject: `Top Pick: ${ticker} ▲ STRONG BUY — ${windowLabel}`,\n      html, plain,\n    });\n  }\n  if (u.slack_enabled && user.slack_webhook) {\n    channels.push({\n      channel: 'slack', alert_log_id: newUuid(), to: user.slack_webhook,\n      slack_payload: {\n        blocks: [\n          { type: 'header', text: { type: 'plain_text', text: `Top Pick: ${ticker} ▲ STRONG BUY` } },\n          { type: 'section', text: { type: 'mrkdwn', text: `*PKR ${safeNum(live.close)}*  ·  ${pctSign}${safeNum(pct)}%  ·  confidence: *${src.suggestion_confidence}*\\n\\n${plainEnglish}` } },\n          { type: 'context', elements: [{ type: 'mrkdwn', text: `RSI ${safeNum(live.rsi14, 1)} · MA50 ${safeNum(live.ma50)} · MA200 ${safeNum(live.ma200)} · Vol ${safeNum((live.volatility20d || 0) * 100, 1)}%` }] },\n          ...(news.length ? [{ type: 'section', text: { type: 'mrkdwn', text: '*Recent news*\\n' + news.map(n => `• <${n.link}|${n.headline}> _(${n.source})_`).join('\\n') } }] : []),\n          { type: 'context', elements: [{ type: 'mrkdwn', text: `<https://finmate.app/docs/notifications|Read the guide →>  ·  FinMate ${windowLabel}` }] },\n        ],\n      },\n    });\n  }\n  if (channels.length === 0) continue;\n  rows.push({\n    user_id: user.id, ticker, signal_3class: 'BUY',\n    reason: plainEnglish, alert_window: alertWindow,\n    channels,\n    ...buildIds(user.id),\n  });\n}\nreturn rows.map(r => ({ json: r }));"
+      },
+      "id": "top-build",
+      "name": "Top: build messages",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [720, -240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/alert",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" },
+            { "name": "content-type", "value": "application/json" },
+            { "name": "Prefer", "value": "return=representation" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.create_alert_body) }}"
+      },
+      "id": "top-create-alert",
+      "name": "Top: create Alert row",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [960, -240]
+    },
+    {
+      "parameters": {
+        "jsCode": "/* Carry the just-created alert.id forward alongside the original send payload. */\nconst sendRow = $('Top: build messages').item.json;\nconst created = $input.item.json;\nconst alertId = Array.isArray(created) ? (created[0] && created[0].id) : created.id;\nreturn [{ json: { ...sendRow, alert_id: alertId } }];"
+      },
+      "id": "top-thread-id",
+      "name": "Top: thread alert_id",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1200, -240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/alert_detail",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" },
+            { "name": "content-type", "value": "application/json" },
+            { "name": "Prefer", "value": "return=minimal" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.create_alert_detail_body) }}"
+      },
+      "id": "top-create-detail",
+      "name": "Top: create alert_detail",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1320, -240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/notification",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" },
+            { "name": "content-type", "value": "application/json" },
+            { "name": "Prefer", "value": "return=minimal" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($('Top: thread alert_id').item.json.create_notification_body) }}"
+      },
+      "id": "top-create-notification",
+      "name": "Top: create notification",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1380, -240]
+    },
+    {
+      "parameters": {
+        "jsCode": "/* Restore the row context that was wiped by the two preceding HTTP\n * POSTs (which both ran with Prefer: return=minimal). Downstream\n * channel-switch + send + log nodes all reference $json.X — pull it\n * back from the upstream Code node so those references resolve. */\nreturn [{ json: $('Top: thread alert_id').item.json }];"
+      },
+      "id": "top-restore",
+      "name": "Top: restore row context",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1410, -240]
+    },
+    {
+      "parameters": {
+        "jsCode": "/* Fan out the per-user row to one item per enabled channel.\n * Each channel sub-row carries its own alert_log_id; the alert + alert_detail + notification rows were already created once per user. */\nconst rows = $input.all().map(i => i.json);\nconst out = [];\nfor (const row of rows) {\n  for (const ch of (row.channels || [])) {\n    out.push({ json: { ...row, ...ch } });\n  }\n}\nreturn out;"
+      },
+      "id": "top-fanout-channels",
+      "name": "Top: fan out channels",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1430, -240]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            { "conditions": { "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "loose" }, "conditions": [{ "leftValue": "={{ $json.channel }}", "rightValue": "slack", "operator": { "type": "string", "operation": "equals" } }], "combinator": "and" }, "outputKey": "slack" },
+            { "conditions": { "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "loose" }, "conditions": [{ "leftValue": "={{ $json.channel }}", "rightValue": "email", "operator": { "type": "string", "operation": "equals" } }], "combinator": "and" }, "outputKey": "email" }
+          ]
+        },
+        "options": {}
+      },
+      "id": "top-switch",
+      "name": "Top: switch channel",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [1440, -240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $json.to }}",
+        "sendHeaders": true,
+        "headerParameters": { "parameters": [{ "name": "content-type", "value": "application/json" }] },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.slack_payload) }}"
+      },
+      "id": "top-send-slack",
+      "name": "Top: send Slack",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1680, -340]
+    },
+    {
+      "parameters": {
+        "fromEmail": "alerts@finmate.app",
+        "toEmail": "={{ $json.to }}",
+        "subject": "={{ $json.subject }}",
+        "emailFormat": "html",
+        "html": "={{ $json.html }}",
+        "options": {}
+      },
+      "id": "top-send-email",
+      "name": "Top: send Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [1680, -140],
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/alert_log",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" },
+            { "name": "content-type", "value": "application/json" },
+            { "name": "Prefer", "value": "return=minimal" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"id\": \"{{ $json.alert_log_id }}\",\n  \"alert_id\": \"{{ $json.alert_id }}\",\n  \"channel\": \"{{ $json.channel.toUpperCase() }}\",\n  \"status\": \"SENT\",\n  \"error_message\": \"\",\n  \"sent_at\": \"{{ $json.now_iso }}\",\n  \"created_at\": \"{{ $json.now_iso }}\",\n  \"updated_at\": \"{{ $json.now_iso }}\"\n}"
+      },
+      "id": "top-log",
+      "name": "Top: log alert_log",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1920, -240]
+    },
+    {
+      "parameters": {
+        "amount": 2,
+        "unit": "minutes"
+      },
+      "id": "digest-wait",
+      "name": "Digest: wait 2 min",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [-240, 240]
+    },
+    {
+      "parameters": {
+        "jsCode": "/* DIGEST BRANCH — emit 1 item with rest signals + ticker list + audience. */\nconst src = $('Split top + rest').first().json;\nif (!src || !src.rest || src.rest.length === 0) return [];\nreturn [{\n  json: {\n    rest: src.rest,\n    tickers: src.rest.map(s => s.ticker).join(','),\n    audience: src.audience,\n    window: src.window,\n    window_label: src.window_label,\n    alert_window: src.alert_window,\n  },\n}];"
+      },
+      "id": "digest-prep",
+      "name": "Digest: prep rest",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [0, 240]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/live_market_data",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" }
+          ]
+        },
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "ticker", "value": "=in.({{ $json.tickers }})" },
+            { "name": "select", "value": "ticker,close,change_pct,rsi14,ma50,ma200,volatility20d" }
+          ]
+        }
+      },
+      "id": "digest-fetch-live-batch",
+      "name": "Digest: fetch live (batch)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [240, 240]
+    },
+    {
+      "parameters": {
+        "jsCode": "const src = $('Digest: prep rest').first().json;\nlet lives = [];\ntry { lives = $('Digest: fetch live (batch)').all().map(i => i.json); } catch (e) {}\nconst liveByTicker = {};\nfor (const l of lives) liveByTicker[l.ticker] = l;\nconst enriched = src.rest.map(s => ({ ...s, live: liveByTicker[s.ticker] || {} }));\n\n// Build the Gemini request body server-side so the HTTP node can\n// pass it as one clean JSON.stringify() call — avoids the\n// double-escape problem of embedding JSON.stringify INSIDE another\n// JSON string literal.\nconst userContent = enriched.map(s => {\n  const live = s.live || {};\n  return `${s.ticker}: rsi=${live.rsi14 ?? 'n/a'}, ma50=${live.ma50 ?? 'n/a'}, ma200=${live.ma200 ?? 'n/a'}, close=${live.close ?? 'n/a'}, change_pct=${live.change_pct ?? 'n/a'}, health=${s.health_label ?? 'n/a'}`;\n}).join('\\n');\n\nconst geminiBody = {\n  systemInstruction: {\n    parts: [{ text: 'You are FinMate. For each STRONG_BUY stock below, write a short ONE-SENTENCE plain-English summary in 12 words or fewer — translate the numbers into meaning, no jargon. Return ONLY a single JSON object mapping ticker to summary string, no markdown, no surrounding text. Example: {\"HBL\":\"Banking momentum continuing with strong volume.\",\"OGDC\":\"Energy sector picking up after recent dip.\"}' }],\n  },\n  contents: [{ role: 'user', parts: [{ text: userContent }] }],\n  generationConfig: { maxOutputTokens: 2000, temperature: 0.4, responseMimeType: 'application/json', thinkingConfig: { thinkingBudget: 0 } },\n};\n\nreturn [{ json: { ...src, enriched, gemini_body: geminiBody } }];"
+      },
+      "id": "digest-join",
+      "name": "Digest: join context",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [480, 240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "x-goog-api-key", "value": "={{ $env.GEMINI_API_KEY }}" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.gemini_body) }}"
+      },
+      "id": "digest-claude-batch",
+      "name": "Digest: Claude batch one-liners",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [720, 240],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 65000,
+      "onError": "continueRegularOutput",
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "/* Build digest message (table format) — one row per (user × channel).\n * Each row contains the FULL list of remaining STRONG_BUYs as a compact\n * table. Logged once per send with ticker='DIGEST'.\n *\n * Audience comes from Digest: prep rest (canonical one-entry-per-user\n * source) — re-reading via join context risks amplification if\n * upstream branching produced multiple runs. */\nconst src = $('Digest: prep rest').first().json;\nconst joinCtx = $('Digest: join context').first().json;\nsrc.enriched = joinCtx.enriched || src.rest || [];\nconst llmResp = $input.first().json;\nlet summaries = {};\ntry {\n  const txt = llmResp?.candidates?.[0]?.content?.parts?.[0]?.text || '{}';\n  summaries = JSON.parse(txt);\n} catch (e) {\n  summaries = {};\n}\n\nconst safeNum = (v, d = 2) => (v != null && !isNaN(v) ? Number(v).toFixed(d) : '—');\nconst stocks = src.enriched;\nconst windowLabel = src.window_label;\nconst alertWindow = src.alert_window;\n\nconst tableRowsHtml = stocks.map(s => {\n  const live = s.live || {};\n  const pct = live.change_pct != null ? Number(live.change_pct) : 0;\n  const pctSign = pct >= 0 ? '+' : '';\n  const pctColor = pct >= 0 ? '#16a34a' : '#dc2626';\n  return `\n    <tr style=\\\"border-bottom: 1px solid #f3f4f6;\\\">\n      <td style=\\\"padding: 10px 8px; font-weight: 600; color: #1f2937;\\\">${s.ticker}</td>\n      <td style=\\\"padding: 10px 8px; text-align: right; color: #1f2937;\\\">${safeNum(live.close)}</td>\n      <td style=\\\"padding: 10px 8px; text-align: right; color: ${pctColor};\\\">${pctSign}${safeNum(pct)}%</td>\n      <td style=\\\"padding: 10px 8px; text-align: right; color: #4b5563;\\\">${safeNum(live.rsi14, 1)}</td>\n      <td style=\\\"padding: 10px 8px; color: #4b5563; font-size: 12px;\\\">${summaries[s.ticker] || s.reason || ''}</td>\n    </tr>`;\n}).join('');\n\nconst slackRows = stocks.map(s => {\n  const live = s.live || {};\n  const pct = live.change_pct != null ? Number(live.change_pct) : 0;\n  const pctSign = pct >= 0 ? '+' : '';\n  return `*${s.ticker}*  ·  PKR ${safeNum(live.close)}  ·  ${pctSign}${safeNum(pct)}%  ·  RSI ${safeNum(live.rsi14, 1)}\\n_${summaries[s.ticker] || s.reason || ''}_`;\n}).join('\\n\\n');\n\nconst html = `\n<div style=\\\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 640px; margin: 0 auto; padding: 24px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px;\\\">\n  <div style=\\\"display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #f3f4f6; padding-bottom: 12px; margin-bottom: 16px;\\\">\n    <h1 style=\\\"margin: 0; font-size: 22px; font-weight: 700; color: #1f2937;\\\">Fin<span style=\\\"color: #2563eb;\\\">Mate</span></h1>\n    <span style=\\\"font-size: 12px; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px;\\\">Other Top Performers · ${windowLabel}</span>\n  </div>\n  <p style=\\\"font-size: 14px; color: #4b5563; margin: 0 0 16px 0;\\\">${stocks.length} more strong-buy moves on PSX today:</p>\n  <table style=\\\"width: 100%; font-size: 13px; border-collapse: collapse;\\\">\n    <thead>\n      <tr style=\\\"background: #f9fafb; text-transform: uppercase; font-size: 11px; color: #6b7280; letter-spacing: 0.5px;\\\">\n        <th style=\\\"padding: 8px; text-align: left;\\\">Ticker</th>\n        <th style=\\\"padding: 8px; text-align: right;\\\">Price</th>\n        <th style=\\\"padding: 8px; text-align: right;\\\">Change</th>\n        <th style=\\\"padding: 8px; text-align: right;\\\">RSI</th>\n        <th style=\\\"padding: 8px; text-align: left;\\\">Note</th>\n      </tr>\n    </thead>\n    <tbody>${tableRowsHtml}</tbody>\n  </table>\n  <div style=\\\"border-top: 1px solid #f3f4f6; padding-top: 12px; margin-top: 20px; font-size: 12px; color: #6b7280; text-align: center;\\\">\n    Don't understand a number? <a href=\\\"https://finmate.app/docs/notifications\\\" style=\\\"color: #2563eb;\\\">Read the guide →</a><br>\n    Sent by FinMate · ${windowLabel}\n  </div>\n</div>`.trim();\n\nconst plain = `Other top performers (${stocks.length})\\n\\n` + stocks.map(s => {\n  const live = s.live || {};\n  const pct = live.change_pct != null ? Number(live.change_pct) : 0;\n  const pctSign = pct >= 0 ? '+' : '';\n  return `${s.ticker}  PKR ${safeNum(live.close)}  ${pctSign}${safeNum(pct)}%  RSI ${safeNum(live.rsi14, 1)}\\n${summaries[s.ticker] || s.reason || ''}`;\n}).join('\\n\\n') + `\\n\\nDocs: https://finmate.app/docs/notifications`;\n\nconst nowIso = new Date().toISOString();\nconst newUuid = () => 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => { const r = Math.random() * 16 | 0; return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16); });\n\nconst alertDetailPayload = {\n  tickers: stocks.map(s => ({\n    ticker: s.ticker,\n    close: s.live && s.live.close,\n    change_pct: s.live && s.live.change_pct,\n    rsi14: s.live && s.live.rsi14,\n    summary: summaries[s.ticker] || s.reason || '',\n  })),\n  count: stocks.length,\n  window_label: windowLabel,\n  type: 'DIGEST',\n};\n\nconst symbols = stocks.map(s => s.ticker);\nconst digestReason = `Digest of ${stocks.length} STRONG_BUY signals: ${symbols.join(', ')}`;\n\nconst buildIds = (userId) => {\n  const alertRowId = newUuid();\n  const alertDetailId = newUuid();\n  const notificationId = newUuid();\n  const alertLogId = newUuid();\n  return {\n    alert_row_id: alertRowId,\n    alert_log_id: alertLogId,\n    alert_detail_id: alertDetailId,\n    notification_id: notificationId,\n    now_iso: nowIso,\n    symbols,\n    create_alert_body: { id: alertRowId, user_id: userId, ticker: 'DIGEST', symbols, signal: 'BUY', reason: digestReason, alert_window: alertWindow, created_at: nowIso, updated_at: nowIso },\n    create_alert_detail_body: { id: alertDetailId, alert_id: alertRowId, payload: alertDetailPayload, created_at: nowIso, updated_at: nowIso },\n    create_notification_body: { id: notificationId, user_id: userId, alert_id: alertRowId, type: 'DIGEST', category: 'digest', created_at: nowIso, updated_at: nowIso },\n  };\n};\n\nconst rows = [];\nconst seenUsers = new Set();\nfor (const u of (src.audience || [])) {\n  const user = u.user || {};\n  if (!user.id || seenUsers.has(user.id)) continue;\n  seenUsers.add(user.id);\n  const channels = [];\n  if (u.email_enabled && user.email) {\n    channels.push({\n      channel: 'email', alert_log_id: newUuid(), to: user.email,\n      subject: `${stocks.length} more strong-buy moves — ${windowLabel}`,\n      html, plain,\n    });\n  }\n  if (u.slack_enabled && user.slack_webhook) {\n    channels.push({\n      channel: 'slack', alert_log_id: newUuid(), to: user.slack_webhook,\n      slack_payload: {\n        blocks: [\n          { type: 'header', text: { type: 'plain_text', text: `Other top performers — ${windowLabel}` } },\n          { type: 'section', text: { type: 'mrkdwn', text: `${stocks.length} more strong-buy moves on PSX today:\\n\\n${slackRows}` } },\n          { type: 'context', elements: [{ type: 'mrkdwn', text: `<https://finmate.app/docs/notifications|Read the guide →>  ·  FinMate ${windowLabel}` }] },\n        ],\n      },\n    });\n  }\n  if (channels.length === 0) continue;\n  rows.push({\n    user_id: user.id, ticker: 'DIGEST', signal_3class: 'BUY',\n    reason: digestReason, alert_window: alertWindow,\n    channels,\n    ...buildIds(user.id),\n  });\n}\nreturn rows.map(r => ({ json: r }));"
+      },
+      "id": "digest-build",
+      "name": "Digest: build messages",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [960, 240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/alert",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" },
+            { "name": "content-type", "value": "application/json" },
+            { "name": "Prefer", "value": "return=representation" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.create_alert_body) }}"
+      },
+      "id": "digest-create-alert",
+      "name": "Digest: create Alert row",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1200, 240]
+    },
+    {
+      "parameters": {
+        "jsCode": "const sendRow = $('Digest: build messages').item.json;\nconst created = $input.item.json;\nconst alertId = Array.isArray(created) ? (created[0] && created[0].id) : created.id;\nreturn [{ json: { ...sendRow, alert_id: alertId } }];"
+      },
+      "id": "digest-thread-id",
+      "name": "Digest: thread alert_id",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1440, 240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/alert_detail",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" },
+            { "name": "content-type", "value": "application/json" },
+            { "name": "Prefer", "value": "return=minimal" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.create_alert_detail_body) }}"
+      },
+      "id": "digest-create-detail",
+      "name": "Digest: create alert_detail",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1560, 240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/notification",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" },
+            { "name": "content-type", "value": "application/json" },
+            { "name": "Prefer", "value": "return=minimal" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($('Digest: thread alert_id').item.json.create_notification_body) }}"
+      },
+      "id": "digest-create-notification",
+      "name": "Digest: create notification",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1620, 240]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: $('Digest: thread alert_id').item.json }];"
+      },
+      "id": "digest-restore",
+      "name": "Digest: restore row context",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1650, 240]
+    },
+    {
+      "parameters": {
+        "jsCode": "const rows = $input.all().map(i => i.json);\nconst out = [];\nfor (const row of rows) {\n  for (const ch of (row.channels || [])) {\n    out.push({ json: { ...row, ...ch } });\n  }\n}\nreturn out;"
+      },
+      "id": "digest-fanout-channels",
+      "name": "Digest: fan out channels",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1670, 240]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            { "conditions": { "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "loose" }, "conditions": [{ "leftValue": "={{ $json.channel }}", "rightValue": "slack", "operator": { "type": "string", "operation": "equals" } }], "combinator": "and" }, "outputKey": "slack" },
+            { "conditions": { "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "loose" }, "conditions": [{ "leftValue": "={{ $json.channel }}", "rightValue": "email", "operator": { "type": "string", "operation": "equals" } }], "combinator": "and" }, "outputKey": "email" }
+          ]
+        },
+        "options": {}
+      },
+      "id": "digest-switch",
+      "name": "Digest: switch channel",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [1680, 240]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $json.to }}",
+        "sendHeaders": true,
+        "headerParameters": { "parameters": [{ "name": "content-type", "value": "application/json" }] },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.slack_payload) }}"
+      },
+      "id": "digest-send-slack",
+      "name": "Digest: send Slack",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1920, 140]
+    },
+    {
+      "parameters": {
+        "fromEmail": "alerts@finmate.app",
+        "toEmail": "={{ $json.to }}",
+        "subject": "={{ $json.subject }}",
+        "emailFormat": "html",
+        "html": "={{ $json.html }}",
+        "options": {}
+      },
+      "id": "digest-send-email",
+      "name": "Digest: send Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [1920, 340],
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://jfljvmprzmcridtlmnif.supabase.co/rest/v1/alert_log",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "apikey", "value": "={{ $env.SUPABASE_KEY }}" },
+            { "name": "Authorization", "value": "=Bearer {{ $env.SUPABASE_KEY }}" },
+            { "name": "content-type", "value": "application/json" },
+            { "name": "Prefer", "value": "return=minimal" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"id\": \"{{ $json.alert_log_id }}\",\n  \"alert_id\": \"{{ $json.alert_id }}\",\n  \"channel\": \"{{ $json.channel.toUpperCase() }}\",\n  \"status\": \"SENT\",\n  \"error_message\": \"\",\n  \"sent_at\": \"{{ $json.now_iso }}\",\n  \"created_at\": \"{{ $json.now_iso }}\",\n  \"updated_at\": \"{{ $json.now_iso }}\"\n}"
+      },
+      "id": "digest-log",
+      "name": "Digest: log alert_log",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2160, 240]
+    }
+  ],
+  "connections": {
+    "09:00 PKT (Pre-market)": { "main": [[{ "node": "Detect window", "type": "main", "index": 0 }]] },
+    "12:00 PKT (Mid-session)": { "main": [[{ "node": "Detect window", "type": "main", "index": 0 }]] },
+    "18:40 PKT (Post-market)": { "main": [[{ "node": "Detect window", "type": "main", "index": 0 }]] },
+    "Detect window": { "main": [[{ "node": "Fetch STRONG_BUY signals", "type": "main", "index": 0 }]] },
+    "Fetch STRONG_BUY signals": { "main": [[{ "node": "Fetch eligible users", "type": "main", "index": 0 }]] },
+    "Fetch eligible users": { "main": [[{ "node": "Split top + rest", "type": "main", "index": 0 }]] },
+    "Split top + rest": { "main": [[{ "node": "Top: prep", "type": "main", "index": 0 }, { "node": "Digest: wait 2 min", "type": "main", "index": 0 }]] },
+    "Top: prep": { "main": [[{ "node": "Top: fetch live", "type": "main", "index": 0 }]] },
+    "Top: fetch live": { "main": [[{ "node": "Top: fetch news", "type": "main", "index": 0 }]] },
+    "Top: fetch news": { "main": [[{ "node": "Top: join context", "type": "main", "index": 0 }]] },
+    "Top: join context": { "main": [[{ "node": "Top: Claude detailed", "type": "main", "index": 0 }]] },
+    "Top: Claude detailed": { "main": [[{ "node": "Top: build messages", "type": "main", "index": 0 }]] },
+    "Top: build messages": { "main": [[{ "node": "Top: create Alert row", "type": "main", "index": 0 }]] },
+    "Top: create Alert row": { "main": [[{ "node": "Top: thread alert_id", "type": "main", "index": 0 }]] },
+    "Top: thread alert_id": { "main": [[{ "node": "Top: create alert_detail", "type": "main", "index": 0 }]] },
+    "Top: create alert_detail": { "main": [[{ "node": "Top: create notification", "type": "main", "index": 0 }]] },
+    "Top: create notification": { "main": [[{ "node": "Top: restore row context", "type": "main", "index": 0 }]] },
+    "Top: restore row context": { "main": [[{ "node": "Top: fan out channels", "type": "main", "index": 0 }]] },
+    "Top: fan out channels": { "main": [[{ "node": "Top: switch channel", "type": "main", "index": 0 }]] },
+    "Top: switch channel": { "main": [[{ "node": "Top: send Slack", "type": "main", "index": 0 }], [{ "node": "Top: send Email", "type": "main", "index": 0 }]] },
+    "Top: send Slack": { "main": [[{ "node": "Top: log alert_log", "type": "main", "index": 0 }]] },
+    "Top: send Email": { "main": [[{ "node": "Top: log alert_log", "type": "main", "index": 0 }]] },
+    "Digest: wait 2 min": { "main": [[{ "node": "Digest: prep rest", "type": "main", "index": 0 }]] },
+    "Digest: prep rest": { "main": [[{ "node": "Digest: fetch live (batch)", "type": "main", "index": 0 }]] },
+    "Digest: fetch live (batch)": { "main": [[{ "node": "Digest: join context", "type": "main", "index": 0 }]] },
+    "Digest: join context": { "main": [[{ "node": "Digest: Claude batch one-liners", "type": "main", "index": 0 }]] },
+    "Digest: Claude batch one-liners": { "main": [[{ "node": "Digest: build messages", "type": "main", "index": 0 }]] },
+    "Digest: build messages": { "main": [[{ "node": "Digest: create Alert row", "type": "main", "index": 0 }]] },
+    "Digest: create Alert row": { "main": [[{ "node": "Digest: thread alert_id", "type": "main", "index": 0 }]] },
+    "Digest: thread alert_id": { "main": [[{ "node": "Digest: create alert_detail", "type": "main", "index": 0 }]] },
+    "Digest: create alert_detail": { "main": [[{ "node": "Digest: create notification", "type": "main", "index": 0 }]] },
+    "Digest: create notification": { "main": [[{ "node": "Digest: restore row context", "type": "main", "index": 0 }]] },
+    "Digest: restore row context": { "main": [[{ "node": "Digest: fan out channels", "type": "main", "index": 0 }]] },
+    "Digest: fan out channels": { "main": [[{ "node": "Digest: switch channel", "type": "main", "index": 0 }]] },
+    "Digest: switch channel": { "main": [[{ "node": "Digest: send Slack", "type": "main", "index": 0 }], [{ "node": "Digest: send Email", "type": "main", "index": 0 }]] },
+    "Digest: send Slack": { "main": [[{ "node": "Digest: log alert_log", "type": "main", "index": 0 }]] },
+    "Digest: send Email": { "main": [[{ "node": "Digest: log alert_log", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "active": false,
+  "tags": [{ "name": "finmate" }]
+}

@@ -1,0 +1,48 @@
+# ── Secrets — NEVER commit ──────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.json.key
+*adminsdk*.json
+*service*account*.json
+google-services.json
+GoogleService-Info.plist
+backend/ml_services/Service_Account_key/
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+venv/
+.venv/
+ENV/
+db.sqlite3
+*.sqlite3
+
+# ── ML artifacts (large binaries — stored in GCS, not git) ──────────────────
+backend/integrations/data/models/
+backend/ml_services/artifacts/*.pkl
+backend/ml_services/artifacts/*.pt
+backend/ml_services/artifacts/*.h5
+backend/.hf-cache/
+
+# ── Node / Expo ───────────────────────────────────────────────────────────────
+node_modules/
+.expo/
+dist/
+web-build/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.kotlin/
+
+# ── Misc ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.claude/
+*.log
+mlruns/

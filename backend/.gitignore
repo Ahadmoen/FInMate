@@ -1,0 +1,43 @@
+.env
+__pycache__/
+*.pyc
+db.sqlite3
+.DS_Store
+.claude/
+
+# Cloud credentials — NEVER commit these. Bare keys + any JSON in the
+# Service_Account_key folder are blocked outright. If you accidentally
+# commit one, revoke it in GCP IAM Console immediately.
+*.json.key
+*-sa.json
+*service*account*.json
+*service*account*.json.key
+ml_services/Service_Account_key/
+
+ml_services/artifacts/*.pkl
+ml_services/artifacts/*.h5
+ml_services/artifacts/*.pt
+venv/
+.venv/
+*.egg-info/
+staticfiles/
+
+# Pipeline outputs — what's tracked vs. ignored:
+#   TRACKED (committed for FYP showcase + reproducibility):
+#     stocks.json, forecasting_trend.json, news_sentiment.json,
+#     news_data.json, stock_forecasts.json, best_models.json,
+#     directional_signals.json, daily_ratios.json,
+#     fundamental_ratios.json, live_data.json
+#   NOT TRACKED:
+#     historical_data.json (327 MB — over GitHub's 100 MB hard limit;
+#                           lives in GCS instead)
+#     models/                (1-2 GB binary artifacts; lives in GCS)
+#     pipeline_logs/         (regenerated every run)
+integrations/data/models/
+integrations/data/historical_data.json
+integrations/data/pipeline_logs/
+dummy.db
+
+# n8n workflow JSONs with hardcoded credentials baked in (local-only;
+# the committed n8n/workflow_*.json variants use $env references)
+n8n/local_*.json

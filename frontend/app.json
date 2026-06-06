@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "FinMate",
+    "slug": "finmate",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "finmate",
+    "userInterfaceStyle": "automatic",
+    "icon": "./src/assets/finmate-applogo.png",
+    "ios": {},
+    "android": {
+      "predictiveBackGestureEnabled": false,
+      "usesCleartextTraffic": true,
+      "package": "com.titan19.finmate",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/finmate-applogo.png",
+        "backgroundColor": "#0D4954"
+      }
+    },
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0D4954",
+          "image": "./src/assets/finmate-app.png",
+          "imageWidth": 200,
+          "resizeMode": "contain"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./src/assets/finmate-applogo.png",
+          "color": "#0D4954",
+          "defaultChannel": "default"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "owner": "titan19",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "482aaeba-80bc-4fa1-955f-4de5b6f1d968"
+      }
+    }
+  }
+}

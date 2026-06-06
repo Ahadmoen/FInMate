@@ -1,0 +1,47 @@
+# Don't bake any of these into the image — they're either huge,
+# regenerable inside Cloud Run, or sensitive.
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Pipeline data — Cloud Run downloads these from GCS at runtime
+integrations/data/
+
+# Pipeline run artifacts
+integrations/data/pipeline_logs/
+
+# Local credentials — should NEVER end up in an image
+*.json.key
+*-sa.json
+*service*account*.json
+ml_services/Service_Account_key/
+.env
+
+# IDE / OS metadata
+.git/
+.github/
+.idea/
+.vscode/
+.claude/
+.DS_Store
+
+# Tests + notebooks (not needed at runtime)
+*.ipynb
+*.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+node_modules/
+
+# Local SQLite (Django default)
+db.sqlite3
+
+# Documentation — keep code-relevant only; trim image weight
+*.md
+!README.md

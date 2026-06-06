@@ -1,0 +1,31 @@
+# Secrets — never commit real keys (use .env.example for templates)
+.env
+.env.local
+.env.*.local
+
+# Virtual environments (created when you pip install -r requirements.txt)
+.venv/
+venv/
+ENV/
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

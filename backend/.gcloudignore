@@ -1,0 +1,32 @@
+# Controls what gcloud uploads to Cloud Build. Without this file, gcloud
+# falls back to git semantics and DROPS untracked files (that's why
+# bin/run_api.sh was missing from the first image). With it present,
+# everything not matched here is uploaded — including untracked files.
+#
+# .dockerignore still applies during the docker build, so anything we
+# merely want out of the final image (docs, etc.) is handled there.
+
+# Heavy / regenerable — keep the upload small
+.git/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+integrations/data/
+build/
+dist/
+
+# Sensitive — must never be uploaded
+.env
+*-sa.json
+*.json.key
+*service*account*.json
+ml_services/Service_Account_key/
+
+# OS / IDE noise
+.DS_Store
+.idea/
+.vscode/
+.claude/
